@@ -12,7 +12,9 @@ PRODUCT_MANUFACTURER := Acer
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_SHIPPING_API_LEVEL := 23
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+# Omni's charger image set has xhdpi but no hdpi directory on this branch.
+# This resource bucket does not change the explicit LCD density or TWRP theme.
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_LOCALES := en_US fr_FR
 
 # Recovery has no radio, framework, vendor partition or hardware Composer HAL.

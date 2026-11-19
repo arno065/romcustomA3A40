@@ -13,7 +13,7 @@ jobs:
     env:
       ACER_TWRP_JOBS: '2'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
       - name: Free space on the disposable runner
@@ -71,7 +71,7 @@ jobs:
           bash recovery/twrp/build-local.sh "$RUNNER_TEMP/acer-twrp-source" "$RUNNER_TEMP/recovery-stock.img" "$GITHUB_WORKSPACE/out/twrp-probe" 2>&1 | tee out/twrp-ci/build-session.log
       - name: Keep logs and any successfully packaged probe
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Acer-TWRP-PROBE-UNTESTED-${{ github.run_number }}
           path: |
