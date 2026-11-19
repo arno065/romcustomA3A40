@@ -17,10 +17,28 @@ jobs:
         with:
           persist-credentials: false
       - name: Free space on the disposable runner
+        id: disk
         run: |
           df -h /
           sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
           df -h /
+          python3 - <<'PY'
+          import os, shutil
+          free = shutil.disk_usage(os.environ['RUNNER_TEMP']).free
+          # Leave room for cache extraction, source worktrees and the build.
+          enabled = free >= 60 * 1024**3
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('cache_allowed=' + str(enabled).lower() + '\n')
+          print('Free bytes:', free, '; .repo cache enabled:', enabled)
+          PY
+      - name: Restore repo source cache
+        id: repo-cache
+        if: steps.disk.outputs.cache_allowed == 'true'
+        uses: actions/cache/restore@v4
+        continue-on-error: true
+        with:
+          path: ${{ runner.temp }}/acer-twrp-source/.repo
+          key: acer-twrp-repo-v1-${{ runner.os }}-${{ hashFiles('recovery/twrp/sources.json') }}
       - name: Install legacy Android build dependencies
         run: |
           sudo apt-get update
@@ -50,6 +68,27 @@ jobs:
           set -o pipefail
           bash recovery/twrp/init-sources.sh "$RUNNER_TEMP/acer-twrp-source" 2>&1 | tee out/twrp-ci/sync.log
           df -h / | tee out/twrp-ci/disk-after-sync.log
+      - name: Check space for source cache compression
+        id: cache-space
+        if: steps.disk.outputs.cache_allowed == 'true' && steps.repo-cache.outputs.cache-hit != 'true'
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, shutil, subprocess
+          source = pathlib.Path(os.environ['RUNNER_TEMP']) / 'acer-twrp-source/.repo'
+          size = int(subprocess.check_output(['du', '-sb', str(source)], text=True).split()[0])
+          free = shutil.disk_usage(source).free
+          allowed = free >= size + 25 * 1024**3
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('save_allowed=' + str(allowed).lower() + '\n')
+          print('Repo bytes:', size, '; free bytes:', free, '; save cache:', allowed)
+          PY
+      - name: Save synchronized source cache before compilation
+        if: steps.cache-space.outputs.save_allowed == 'true'
+        uses: actions/cache/save@v4
+        continue-on-error: true
+        with:
+          path: ${{ runner.temp }}/acer-twrp-source/.repo
+          key: acer-twrp-repo-v1-${{ runner.os }}-${{ hashFiles('recovery/twrp/sources.json') }}
       - name: Retrieve and verify the documented stock recovery
         run: |
           python3 tools/fetch_stock.py --output "$RUNNER_TEMP/acer-stock.zip"

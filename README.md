@@ -196,8 +196,8 @@ restent à analyser avant des essais matériels.
   compilés pour les tests : fournisseur compatible, symbole supprimé,
   bibliothèque absente et architecture incorrecte.
 - Trois tests du premier adaptateur graphique.
-- Quatorze tests du portage TWRP : CPIO, identification du stock, contrôles du
-  ramdisk et empaquetage sur fixtures synthétiques ; **31 tests locaux au total**.
+- Vingt-deux tests du portage TWRP : CPIO, identification du stock, extraction
+  du ramdisk construit et empaquetage ; **39 tests locaux au total**.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.
 - Aller-retour du DTB vérifié sur les propriétés et les réservations.
 - Correctif source contrôlé par `git diff --check` et vérification d'application.

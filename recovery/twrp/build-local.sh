@@ -34,9 +34,10 @@ export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL=C LANG=C
 source build/envsetup.sh
 lunch omni_acer_jetfirefhd-eng
-# Build just the ramdisk target. Do not publish Android's unwrapped images.
-make -j"$JOBS" out/target/product/acer_jetfirefhd/ramdisk-recovery.img 2>&1 | tee "$OUTPUT/build.log"
-python3 "$PROJECT/tools/twrp_port.py" pack "$STOCK" \
-    out/target/product/acer_jetfirefhd/ramdisk-recovery.img \
+# Ninja exposes the standard recoveryimage goal, not the intermediate file goal.
+# Inspect its ramdisk and repack separately; do not publish the unwrapped image.
+make -j"$JOBS" recoveryimage 2>&1 | tee "$OUTPUT/build.log"
+python3 "$PROJECT/tools/twrp_port.py" pack-built "$STOCK" \
+    out/target/product/acer_jetfirefhd \
     "$OUTPUT/TWRP-A3-A40-PROBE-UNTESTED.img"
 echo 'Created an untested unsigned probe; no flash or boot command has been run.'

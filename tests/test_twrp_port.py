@@ -10,7 +10,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 import twrp_port
-from boot_image import BootImage
+from boot_image import BootImage, align
 from test_binary_formats import fixture
 
 
@@ -43,6 +43,16 @@ def probe_items():
     for name in ('init.recovery.mt8163.rc', 'ueventd.mt8163.rc'):
         files[name] = (twrp_port.PORT / twrp_port.DEVICE / 'recovery/root' / name).read_bytes()
     return items + [(name, stat.S_IFREG | 0o644, data) for name, data in files.items()]
+
+
+def standard_recovery(ramdisk):
+    """Android v0 build output without MediaTek wrappers (synthetic fixture)."""
+    header = bytearray(BootImage(fixture()).header)
+    sections = [b'built-kernel-fixture', ramdisk, b'']
+    struct.pack_into('<I', header, 8, len(sections[0]))
+    struct.pack_into('<I', header, 16, len(sections[1]))
+    header[576:608] = BootImage.digest(sections).ljust(32, b'\0')
+    return bytes(header) + b''.join(s.ljust(align(len(s), 2048), b'\0') for s in sections)
 
 
 class CpioTests(unittest.TestCase):
@@ -137,6 +147,79 @@ class PackagingTests(unittest.TestCase):
             report = twrp_port.preflight(Path(tmp), free_bytes=2 * 1024**3)
             self.assertFalse(report['ready'])
             self.assertTrue(any('20 GiB' in error for error in report['problems']))
+
+
+class BuiltRamdiskTests(unittest.TestCase):
+    def test_prefer_verified_recovery_image_over_intermediate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = cpio(probe_items())
+            (root / 'recovery.img').write_bytes(standard_recovery(payload))
+            (root / 'ramdisk-recovery.cpio').write_bytes(b'stale-intermediate')
+            compressed, source = twrp_port.built_ramdisk(root)
+            self.assertEqual(compressed, payload)
+            self.assertEqual(source, 'recovery.img:ramdisk')
+
+    def test_accept_raw_cpio_intermediate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = cpio(probe_items())
+            (root / 'ramdisk-recovery.cpio').write_bytes(gzip.decompress(payload))
+            compressed, source = twrp_port.built_ramdisk(root)
+            self.assertEqual(gzip.decompress(compressed), gzip.decompress(payload))
+            self.assertEqual(source, 'ramdisk-recovery.cpio')
+
+    def test_accept_gzip_intermediate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = cpio(probe_items())
+            (root / 'ramdisk-recovery.img').write_bytes(payload)
+            self.assertEqual(twrp_port.built_ramdisk(root), (payload, 'ramdisk-recovery.img'))
+
+    def test_accept_mtk_wrapped_recovery_payload(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = cpio(probe_items())
+            built = BootImage(fixture()).development_recovery(payload)
+            (root / 'recovery.img').write_bytes(built)
+            self.assertEqual(twrp_port.built_ramdisk(root)[0], payload)
+
+    def test_reject_corrupt_image_instead_of_using_stale_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = cpio(probe_items())
+            data = bytearray(standard_recovery(payload))
+            data[2048] ^= 1
+            (root / 'recovery.img').write_bytes(data)
+            (root / 'ramdisk-recovery.cpio').write_bytes(gzip.decompress(payload))
+            with self.assertRaisesRegex(ValueError, 'SHA-1'):
+                twrp_port.built_ramdisk(root)
+
+    def test_reject_truncated_image(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'recovery.img').write_bytes(standard_recovery(cpio(probe_items()))[:-1])
+            with self.assertRaisesRegex(ValueError, 'Truncated'):
+                twrp_port.built_ramdisk(root)
+
+    def test_reject_missing_build_output(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, 'No built'):
+                twrp_port.built_ramdisk(Path(tmp))
+
+    def test_pack_built_retains_acer_kernel_not_standard_build_kernel(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            stock = root / 'stock.img'
+            stock.write_bytes(fixture())
+            pinned = {'stock_recovery_sha256': hashlib.sha256(stock.read_bytes()).hexdigest()}
+            (root / 'recovery.img').write_bytes(standard_recovery(cpio(probe_items())))
+            with patch.object(twrp_port, 'settings', return_value=pinned):
+                report = twrp_port.pack_built(stock, root, root / 'probe.img')
+            built = BootImage((root / 'probe.img').read_bytes())
+            self.assertEqual(built.sections[0], BootImage(stock.read_bytes()).sections[0])
+            self.assertEqual(report['built_ramdisk_source'], 'recovery.img:ramdisk')
+            self.assertEqual(built.trailer, b'')
 
 
 if __name__ == '__main__':

@@ -83,8 +83,11 @@ bash recovery/twrp/build-local.sh /chemin/neuf/twrp-a3a40 /chemin/recovery-stock
 
 La préparation copie la géométrie mesurée commune, extrait le noyau sans son
 en-tête MediaTek et conserve le recovery stock comme modèle d'empaquetage.
-Le build vise `ramdisk-recovery.img`. Il n'utilise pas le résultat standard
-`recovery.img` d'Android make : ce dernier ne gère pas nos en-têtes spécifiques.
+Le build vise la cible standard `recoveryimage`. L'empaquetage récupère le ramdisk
+du `recovery.img` généré après contrôle de son en-tête et de son SHA-1 ; à défaut,
+il accepte `ramdisk-recovery.cpio` brut ou `ramdisk-recovery.img` compressé.
+L'image finale est reconstruite avec les en-têtes MediaTek et le noyau stock
+identifié. Le `recovery.img` standard n'est pas livré comme image pour l'Acer.
 Des fichiers intermédiaires, dont `boot.img`, peuvent être produits comme
 dépendances ; ils ne doivent pas être utilisés sur l'Acer.
 
@@ -124,7 +127,19 @@ Le workflow libère de l'espace uniquement sur le runner jetable, installe les
 outils Android anciens, vérifie le lanceur repo v2.54 par SHA-256, synchronise
 les sources et récupère le firmware stock avec le contrôle de taille/SHA-256.
 Seul le recovery nécessaire est extrait. Le ZIP de 1,5 Go est ensuite supprimé.
-Les résultats et journaux sont conservés trois jours, sans cache volumineux,
+Le lanceur utilise `repo init --depth=1` et
+`repo sync -c --force-sync --no-clone-bundle --no-tags -j$(nproc)`.
+Un cache `.repo` utilise les actions `actions/cache/restore@v4` et
+`actions/cache/save@v4`, avec une clé fondée sur le hash de `sources.json`, qui
+contient la révision du manifeste. La restauration n'est activée que si au moins
+60 Gio sont libres après nettoyage. La sauvegarde suit immédiatement une
+synchronisation réussie, avant la compilation, et exige une marge libre d'au
+moins la taille de `.repo` plus 25 Gio pour la compression et le build. Un échec
+de cache, notamment faute de quota, n'arrête pas la compilation. Seuls les objets
+et métadonnées `.repo` sont cachés ; les fichiers de travail sont recréés par
+`repo sync`. Le script refuse toujours d'écraser un arbre de travail existant.
+
+Les résultats et journaux sont conservés trois jours,
 sans publication automatique de release ni envoi du firmware OEM complet.
 Une image n'est jointe que si la construction puis les contrôles d'empaquetage
 ont réussi. Elle reste marquée UNTESTED et ne constitue pas une validation matérielle.

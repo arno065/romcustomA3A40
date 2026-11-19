@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Stage and validate the Acer TWRP probe. Offline, no tablet commands."""
 import argparse
+import gzip
 import hashlib
 import json
 import posixpath
@@ -11,7 +12,7 @@ import zlib
 from pathlib import Path, PurePosixPath
 from xml.etree import ElementTree as ET
 
-from boot_image import BootImage
+from boot_image import BootImage, MTK_MAGIC, align
 
 ROOT = Path(__file__).resolve().parents[1]
 PORT = ROOT / 'recovery/twrp'
@@ -151,12 +152,62 @@ def prepare(stock, destination):
     return report
 
 
+def built_ramdisk(product_out):
+    """Prefer recoveryimage's actual payload; accept raw/compressed CPIO fallbacks."""
+    recovery = product_out / 'recovery.img'
+    if recovery.is_file():
+        raw = recovery.read_bytes()
+        if len(raw) < 608 or raw[:8] != b'ANDROID!':
+            raise ValueError('Invalid built recovery.img header')
+        fields = struct.unpack_from('<10I', raw, 8)
+        page, version = fields[7:9]
+        if page not in (2048, 4096, 8192, 16384) or version != 0:
+            raise ValueError('Expected a legacy Android v0 recovery.img')
+        sections, pos = [], page
+        for size in (fields[0], fields[2], fields[4]):
+            end = pos + align(size, page)
+            if end > len(raw):
+                raise ValueError('Truncated built recovery.img section')
+            sections.append(raw[pos:pos + size])
+            pos = end
+        if BootImage.digest(sections) != raw[576:596]:
+            raise ValueError('Built recovery.img header SHA-1 mismatch')
+        payload = sections[1]
+        if payload[:4] == struct.pack('<I', MTK_MAGIC):
+            payload = BootImage.unwrap_mtk(payload, 'ramdisk')
+        name = 'recovery.img:ramdisk'
+    else:
+        candidate = next((product_out / name for name in
+                          ('ramdisk-recovery.cpio', 'ramdisk-recovery.img')
+                          if (product_out / name).is_file()), None)
+        if candidate is None:
+            raise ValueError('No built recovery.img or recovery ramdisk found')
+        if candidate.stat().st_size > MAX_CPIO:
+            raise ValueError('Built recovery ramdisk exceeds 128 MiB')
+        payload, name = candidate.read_bytes(), candidate.name
+    if payload.startswith(b'070701'):
+        payload = gzip.compress(payload, mtime=0)
+    # Also reject unknown compression, truncation and malformed CPIO before packing.
+    read_newc(payload)
+    return payload, name
+
+
 def pack(stock, ramdisk, output):
+    return pack_compressed(stock, ramdisk.read_bytes(), output)
+
+
+def pack_built(stock, product_out, output):
+    compressed, source = built_ramdisk(product_out)
+    return pack_compressed(stock, compressed, output, source)
+
+
+def pack_compressed(stock, compressed, output, source=None):
     image = stock_image(stock)
     if output.exists():
         raise ValueError('Output exists; refusing to overwrite it')
-    compressed = ramdisk.read_bytes()
     report = check_ramdisk(compressed)
+    if source is not None:
+        report['built_ramdisk_source'] = source
     built = image.development_recovery(compressed)
     parsed = BootImage(built)
     if parsed.sections[0] != image.sections[0]:
@@ -195,6 +246,10 @@ def main():
     p.add_argument('stock', type=Path)
     p.add_argument('ramdisk', type=Path)
     p.add_argument('output', type=Path)
+    p = sub.add_parser('pack-built')
+    p.add_argument('stock', type=Path)
+    p.add_argument('product_out', type=Path)
+    p.add_argument('output', type=Path)
     p = sub.add_parser('preflight')
     p.add_argument('source', type=Path)
     args = parser.parse_args()
@@ -205,6 +260,8 @@ def main():
             result = check_ramdisk(args.ramdisk.read_bytes())
         elif args.command == 'pack':
             result = pack(args.stock, args.ramdisk, args.output)
+        elif args.command == 'pack-built':
+            result = pack_built(args.stock, args.product_out, args.output)
         else:
             result = preflight(args.source)
         print(json.dumps(result, indent=2))

@@ -9,8 +9,10 @@ python3 - "$SOURCE" <<'PY'
 import shutil, sys
 from pathlib import Path
 dest = Path(sys.argv[1]).resolve()
-if dest.exists():
-    raise SystemExit('Use a new directory; existing source trees are not overwritten.')
+if dest.exists() and (not dest.is_dir() or
+                      set(p.name for p in dest.iterdir()) != {'.repo'} or
+                      not (dest / '.repo').is_dir()):
+    raise SystemExit('Use a new directory or one containing only a restored .repo cache.')
 ancestor = dest.parent
 while not ancestor.exists():
     ancestor = ancestor.parent
@@ -35,6 +37,6 @@ for p in json.load(open(sys.argv[1]))['projects']:
     ET.SubElement(root, 'extend-project', name=p['name'], path=p['path'], revision=p['commit'])
 ET.ElementTree(root).write('.repo/local_manifests/acer-pins.xml', encoding='utf-8', xml_declaration=True)
 PY
-repo sync -c --no-clone-bundle --no-tags -j2
+repo sync -c --force-sync --no-clone-bundle --no-tags -j"$(nproc)"
 repo manifest -r -o acer-sources-resolved.xml
 echo 'Sources synced. Build remains a separate explicit local operation.'
