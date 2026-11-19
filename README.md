@@ -26,6 +26,9 @@ Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cib
 - Premier adaptateur `GraphicBufferMapper::lock` écrit et compilé en objet
   AArch64. Sa liaison Android 13 et son fonctionnement matériel restent à tester.
 
+L’archive du noyau expérimental et ses sommes de contrôle sont dans
+[`artifacts/kernel-investigation/`](artifacts/kernel-investigation/).
+
 ## Sources et portée
 
 Archive analysée :
