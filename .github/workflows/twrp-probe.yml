@@ -1,0 +1,85 @@
+name: Build experimental Acer TWRP probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: acer-a3a40-twrp
+  cancel-in-progress: false
+jobs:
+  twrp:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    env:
+      ACER_TWRP_JOBS: '2'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Free space on the disposable runner
+        run: |
+          df -h /
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+          df -h /
+      - name: Install legacy Android build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc bison build-essential curl flex g++-multilib gcc-multilib git gnupg gperf lib32ncurses-dev lib32z1-dev libelf-dev liblz4-tool libncurses5 libssl-dev libtinfo5 libxml2-utils lzop openjdk-8-jdk python2 python3 rsync unzip xsltproc zip zlib1g-dev
+          mkdir -p "$RUNNER_TEMP/acer-bin" "$GITHUB_WORKSPACE/out/twrp-ci"
+          ln -s /usr/bin/python2.7 "$RUNNER_TEMP/acer-bin/python"
+          echo "$RUNNER_TEMP/acer-bin" >> "$GITHUB_PATH"
+          git config --global user.name 'Acer recovery build'
+          git config --global user.email 'recovery-build@users.noreply.github.com'
+      - name: Install verified repo launcher
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, os, pathlib, urllib.request
+          url = 'https://gerrit.googlesource.com/git-repo/+/refs/tags/v2.54/repo?format=TEXT'
+          raw = base64.b64decode(urllib.request.urlopen(url, timeout=60).read())
+          assert hashlib.sha256(raw).hexdigest() == '6cba294d6218bbd4a1500598207b3979c752c7a122aef9429e4d7fef688833b5', 'Unexpected repo launcher'
+          path = pathlib.Path(os.environ['RUNNER_TEMP']) / 'acer-bin/repo'
+          path.write_bytes(raw)
+          path.chmod(0o755)
+          PY
+      - name: Run local format and port tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Synchronize pinned TWRP sources
+        timeout-minutes: 55
+        shell: bash
+        run: |
+          set -o pipefail
+          bash recovery/twrp/init-sources.sh "$RUNNER_TEMP/acer-twrp-source" 2>&1 | tee out/twrp-ci/sync.log
+          df -h / | tee out/twrp-ci/disk-after-sync.log
+      - name: Retrieve and verify the documented stock recovery
+        run: |
+          python3 tools/fetch_stock.py --output "$RUNNER_TEMP/acer-stock.zip"
+          python3 - <<'PY'
+          import os, pathlib, zipfile
+          stock = pathlib.Path(os.environ['RUNNER_TEMP'])
+          with zipfile.ZipFile(stock / 'acer-stock.zip') as archive:
+              names = [n for n in archive.namelist() if n.rsplit('/', 1)[-1] == 'recovery.img']
+              assert len(names) == 1, 'Expected exactly one recovery.img'
+              info = archive.getinfo(names[0])
+              assert info.file_size <= 16777216, 'Recovery partition size exceeded'
+              (stock / 'recovery-stock.img').write_bytes(archive.read(names[0]))
+          PY
+          rm "$RUNNER_TEMP/acer-stock.zip"
+      - name: Build and inspect the unsigned TWRP probe
+        shell: bash
+        run: |
+          set -o pipefail
+          bash recovery/twrp/build-local.sh "$RUNNER_TEMP/acer-twrp-source" "$RUNNER_TEMP/recovery-stock.img" "$GITHUB_WORKSPACE/out/twrp-probe" 2>&1 | tee out/twrp-ci/build-session.log
+      - name: Keep logs and any successfully packaged probe
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Acer-TWRP-PROBE-UNTESTED-${{ github.run_number }}
+          path: |
+            out/twrp-ci/*.log
+            out/twrp-probe/*.log
+            out/twrp-probe/*.xml
+            out/twrp-probe/*.json
+            out/twrp-probe/TWRP-A3-A40-PROBE-UNTESTED.img
+          if-no-files-found: warn
+          retention-days: 3
+          compression-level: 6

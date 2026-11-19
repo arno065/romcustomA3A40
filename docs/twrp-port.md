@@ -64,7 +64,8 @@ n'est donc incluse dans cette recette.
 Prévoir une machine Linux x86_64 avec Python 3 pour nos outils, Python 2.7 comme
 `python` pour l'ancien système Android 9, les dépendances de compilation Android
 et le lanceur `repo`. Utiliser un environnement dédié à ces outils anciens.
-Le script exige au moins 40 Gio libres ; prévoir plutôt 60 Gio ou davantage.
+Le script exige au moins 40 Gio libres avant synchronisation et 20 Gio encore
+libres avant compilation ; prévoir plutôt 60 Gio ou davantage au départ.
 Ce seuil est une marge de préparation, pas une taille de build mesurée ici.
 L'environnement actuel dispose d'environ 8 Gio au total et ne peut pas accueillir
 cette compilation. Aucune synchronisation complète n'y a été lancée.
@@ -110,11 +111,25 @@ d'une image d'un autre appareil, ni flash, ni déverrouillage, ni wipe.
    formatage de `/data` pour faire disparaître un échec de déchiffrement.
 5. Concevoir puis tester le profil d'installation séparé, avant un ZIP LineageOS.
 
-## Consommation GitHub Actions
+## Construction GitHub Actions et consommation
 
-Tous les workflows du dépôt sont maintenant **manuels** (`workflow_dispatch`).
-Un push ou une pull request ne déclenche aucune compilation ni aucun test.
-Ce portage ne crée aucun workflow TWRP. Les contrôles sont exécutés localement.
-Les plafonds existants sont de 10 minutes pour les tests et 45 pour le noyau,
-uniquement si quelqu'un les déclenche explicitement. Cela ne suit ni ne plafonne
-la consommation éventuelle des autres dépôts du compte.
+Tous les workflows du dépôt sont **manuels** (`workflow_dispatch`). Un push ou
+une pull request ne déclenche aucune compilation ni aucun test. Le propriétaire
+a autorisé la construction TWRP sur Actions avec son plafond de dépenses à 0 €.
+Le workflow `Build experimental Acer TWRP probe` utilise un runner Linux standard,
+un seul job limité à 120 minutes, deux tâches de compilation et aucune matrice.
+Les exécutions de ce workflow ne se chevauchent pas.
+
+Le workflow libère de l'espace uniquement sur le runner jetable, installe les
+outils Android anciens, vérifie le lanceur repo v2.54 par SHA-256, synchronise
+les sources et récupère le firmware stock avec le contrôle de taille/SHA-256.
+Seul le recovery nécessaire est extrait. Le ZIP de 1,5 Go est ensuite supprimé.
+Les résultats et journaux sont conservés trois jours, sans cache volumineux,
+sans publication automatique de release ni envoi du firmware OEM complet.
+Une image n'est jointe que si la construction puis les contrôles d'empaquetage
+ont réussi. Elle reste marquée UNTESTED et ne constitue pas une validation matérielle.
+
+Les autres limites restent de 10 minutes pour les tests et 45 pour le noyau.
+Aucun réglage de facturation n'est modifié. Ces limites ne suivent ni ne plafonnent
+la consommation des autres dépôts du compte. Un nouveau lancement reste explicite ;
+il n'y a pas de boucle de relance automatique.

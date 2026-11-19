@@ -174,12 +174,12 @@ def pack(stock, ramdisk, output):
 def preflight(source, free_bytes=None):
     problems = []
     available = shutil.disk_usage(source).free if free_bytes is None else free_bytes
-    if available < 40 * 1024**3:
-        problems.append('At least 40 GiB free required by this recipe before sync/build')
+    if available < 20 * 1024**3:
+        problems.append('At least 20 GiB free required after source sync before building')
     for name in ('build/envsetup.sh', 'bootable/recovery/Android.mk', 'vendor/omni/config/common.mk'):
         if not (source / name).is_file():
             problems.append('Missing source: ' + name)
-    return {'free_bytes': available, 'minimum_free_bytes': 40 * 1024**3,
+    return {'free_bytes': available, 'minimum_free_bytes': 20 * 1024**3,
             'problems': problems, 'ready': not problems}
 
 

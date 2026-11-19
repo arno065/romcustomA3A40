@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Explicit local operation only. Never invoked by GitHub Actions.
+# Explicit operation on a local machine or the manually dispatched CI runner.
 set -euo pipefail
 PROJECT=$(cd -- "$(dirname -- "$0")/../.." && pwd)
 SOURCE=${1:?Usage: bash recovery/twrp/init-sources.sh /new/source/directory}
@@ -25,7 +25,7 @@ s = json.load(open(sys.argv[1]))['manifest']
 print(s['url']); print(s['commit'])
 PY
 )
-repo init --depth=1 -u "${MANIFEST[0]}" -b "${MANIFEST[1]}"
+repo init --depth=1 -u "${MANIFEST[0]}" -b "${MANIFEST[1]}" --repo-rev=v2.54
 mkdir -p .repo/local_manifests
 python3 - "$PROJECT/recovery/twrp/sources.json" <<'PY'
 import json, sys

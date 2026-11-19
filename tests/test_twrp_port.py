@@ -136,7 +136,7 @@ class PackagingTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             report = twrp_port.preflight(Path(tmp), free_bytes=2 * 1024**3)
             self.assertFalse(report['ready'])
-            self.assertTrue(any('40 GiB' in error for error in report['problems']))
+            self.assertTrue(any('20 GiB' in error for error in report['problems']))
 
 
 if __name__ == '__main__':
