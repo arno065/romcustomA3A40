@@ -1,0 +1,38 @@
+{
+  "status": "prepared and checked offline; full TWRP NOT compiled; no hardware test",
+  "tests_passed": 31,
+  "twrp_tests_passed": 14,
+  "gnu_make_boardconfig_evaluation": "arm64 16777216 0x40000000 0x04000000 1920 1200 landscape_hdpi false true",
+  "real_stock_recovery_cpio_entries_parsed": 52,
+  "real_stock_kernel_bytes": 6355010,
+  "real_stock_kernel_sha256": "14cc532dd93373454e10fdb1efa898816bf09ee84c3b8dccf0d5fe86b6a9d2ec",
+  "stock_kernel_extraction_byte_identical": true,
+  "maximum_compressed_ramdisk_bytes_for_16MiB_partition": 10417664,
+  "probe_fstab": "# TWRP v1 syntax: mount-point filesystem block-device flags.\n# Probe profile: NO /data, /cache, /misc or firmware partitions.\n# ro is a default, not an access-control boundary against root or an updater ZIP.\n/system ext4 /dev/block/mmcblk0p20 flags=fsflags=ro,noload;backup=1;wipeingui=0;canbewiped=0\n/boot emmc /dev/block/mmcblk0p8 flags=backup=1;flashimg=0;wipeingui=0;canbewiped=0\n/recovery emmc /dev/block/mmcblk0p9 flags=backup=1;flashimg=0;wipeingui=0;canbewiped=0\n",
+  "build_preflight": {
+    "free_bytes": 1771917312,
+    "minimum_free_bytes": 42949672960,
+    "problems": [
+      "At least 40 GiB free required by this recipe before sync/build",
+      "Missing source: build/envsetup.sh",
+      "Missing source: bootable/recovery/Android.mk",
+      "Missing source: vendor/omni/config/common.mk"
+    ],
+    "ready": false
+  },
+  "workflow_policy": {
+    "tests": "manual only",
+    "kernel": "manual only",
+    "twrp": "no workflow",
+    "actions_jobs_started_this_step": 0
+  },
+  "not_validated": [
+    "full Android make product integration",
+    "TWRP compilation/linking",
+    "ELF dependency closure",
+    "SELinux policy compatibility",
+    "stock touchscreen firmware programming behavior",
+    "hardware boot",
+    "Android 13 ZIP installation"
+  ]
+}

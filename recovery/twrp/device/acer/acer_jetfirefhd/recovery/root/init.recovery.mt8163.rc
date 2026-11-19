@@ -1,0 +1,11 @@
+# Hardware-specific additions; retain TWRP's own init and USB scripts.
+on init
+    # Acer stock recovery uses this to restore normal USB enumeration.
+    write /sys/devices/platform/mt_usb/cmode 1
+
+on fs
+    mkdir /dev/block/platform/mtk-msdc.0 0755 root root
+    symlink ../soc/11230000.mmc /dev/block/platform/mtk-msdc.0/11230000.MSDC0
+
+on boot
+    setprop sys.usb.config adb

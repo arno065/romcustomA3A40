@@ -1,0 +1,6 @@
+# Minimal recovery device access; no connectivity/camera firmware is loaded.
+/dev/graphics/fb0 0660 root graphics
+/dev/input/event* 0660 root input
+/dev/block/mmcblk0p8 0600 root root
+/dev/block/mmcblk0p9 0600 root root
+/dev/block/mmcblk0p20 0600 root root

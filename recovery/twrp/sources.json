@@ -1,0 +1,28 @@
+{
+  "manifest": {
+    "url": "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git",
+    "branch": "twrp-9.0",
+    "commit": "f3f57994a2aa2c92303df24bb01caff6850f7463"
+  },
+  "projects": [
+    {
+      "name": "android_bootable_recovery",
+      "path": "bootable/recovery",
+      "remote": "TeamWin",
+      "url": "https://github.com/TeamWin/android_bootable_recovery.git",
+      "commit": "90e5d9559065cfa8b2b9a5dbb1c5cb7a88f034fa"
+    },
+    {
+      "name": "android_build",
+      "path": "build/make",
+      "remote": "TeamWin",
+      "url": "https://github.com/TeamWin/android_build.git",
+      "commit": "0ae4675e7635505ac594cca1f12b6d922eab2a8d"
+    }
+  ],
+  "reproducibility_limit": "Only the manifest and these two projects are pinned here. Export repo manifest -r after a successful sync to freeze every transitive project.",
+  "stock_recovery_sha256": "4aa1ff4a7b824e57839f929730f9cd5798cb6bffa4ec0c978d86ff147f932aee",
+  "stock_build": "Acer_AV0M0_A3-A40_0.013.00_WW_GEN1",
+  "owner_build": "Acer_AV0M0_A3-A40_9.001.00_WW_GEN1",
+  "status": "Device tree and offline packaging preparation only; no full TWRP compilation or tablet test"
+}

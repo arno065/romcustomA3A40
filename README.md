@@ -4,6 +4,10 @@
 écrit, sans ROM Android 13 compilée, sans recovery personnalisé fonctionnel et
 sans essai sur tablette**.
 
+Le [portage TWRP](docs/twrp-port.md) dispose maintenant d'un arbre appareil
+séparé, d'une recette locale et de contrôles d'empaquetage. TWRP n'est pas
+encore compilé : ce workspace est trop petit pour ses sources et son build.
+
 La cible reste LineageOS 20 / Android 13 allégé, ARM64 avec compatibilité ARM32.
 Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cible
 `lunch` : le noyau Android 13 et l'intégration des HAL restent à réaliser.
@@ -25,6 +29,8 @@ Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cib
   propriétés de son DTB comparées à celles du firmware d'origine.
 - Premier adaptateur `GraphicBufferMapper::lock` écrit et compilé en objet
   AArch64. Sa liaison Android 13 et son fonctionnement matériel restent à tester.
+- Arbre recovery TWRP ARM64 préparé, noyau stock identifié extrait sans modification,
+  profil de diagnostic sans `/data` ni `/cache`, empaquetage final MediaTek contrôlé.
 
 L’archive du noyau expérimental et ses sommes de contrôle sont dans
 [`artifacts/kernel-investigation/`](artifacts/kernel-investigation/).
@@ -163,7 +169,8 @@ choix d'intégration distinct, pas une condition du premier démarrage.
 
 ## Compilation expérimentale sur GitHub Actions
 
-Le workflow `Source and binary-format tests` exécute les tests à chaque push.
+Tous les workflows sont désormais **manuels** : aucun job à chaque push ou PR.
+Le workflow `Source and binary-format tests` ne s'exécute que sur demande.
 `Experimental Acer kernel candidate` est un workflow manuel qui récupère la
 source Acer épinglée, applique le correctif et tente une compilation avec le GCC
 Android 4.9 de la branche Google `marshmallow-release`, épinglé à la révision
@@ -188,13 +195,17 @@ restent à analyser avant des essais matériels.
 - Quatre tests supplémentaires du contrôle d'ABI avec de vrais fichiers ELF
   compilés pour les tests : fournisseur compatible, symbole supprimé,
   bibliothèque absente et architecture incorrecte.
-- Trois tests du premier adaptateur graphique : **17 tests locaux au total**.
+- Trois tests du premier adaptateur graphique.
+- Quatorze tests du portage TWRP : CPIO, identification du stock, contrôles du
+  ramdisk et empaquetage sur fixtures synthétiques ; **31 tests locaux au total**.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.
 - Aller-retour du DTB vérifié sur les propriétés et les réservations.
 - Correctif source contrôlé par `git diff --check` et vérification d'application.
 - Noyau candidat : compilé localement en `Image.gz-dtb`, DTB vérifié ; non testé
   sur matériel et non validé pour Android 13.
 - Android 13 : non compilé, non démarré ; aucune version flashable livrée.
+- TWRP : arbre préparé et contrôlé hors ligne ; compilation complète bloquée
+  par la capacité disque, aucun essai matériel. Voir [la recette](docs/twrp-port.md).
 
 Le détail des interfaces restant à adapter est dans
 [`docs/compatibility-plan.md`](docs/compatibility-plan.md).

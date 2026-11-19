@@ -102,6 +102,8 @@
       "source": "Kconfig output from the pinned donor with the current hardware patch; no hardware test"
     },
     "kernel_compilation": "Image.gz-dtb produced locally; see kernel-build.json",
-    "graphics_lock_forwarding_tests_passed": 3
+    "graphics_lock_forwarding_tests_passed": 3,
+    "twrp_port_unit_tests_passed": 14,
+    "twrp_compilation": "not performed; workspace capacity insufficient"
   }
 }

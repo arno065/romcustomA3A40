@@ -1,0 +1,6 @@
+# TWRP v1 syntax: mount-point filesystem block-device flags.
+# Probe profile: NO /data, /cache, /misc or firmware partitions.
+# ro is a default, not an access-control boundary against root or an updater ZIP.
+/system ext4 /dev/block/mmcblk0p20 flags=fsflags=ro,noload;backup=1;wipeingui=0;canbewiped=0
+/boot emmc /dev/block/mmcblk0p8 flags=backup=1;flashimg=0;wipeingui=0;canbewiped=0
+/recovery emmc /dev/block/mmcblk0p9 flags=backup=1;flashimg=0;wipeingui=0;canbewiped=0
