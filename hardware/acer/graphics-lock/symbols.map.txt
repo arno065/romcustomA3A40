@@ -1,0 +1,6 @@
+{
+    global:
+        _ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv;
+    local:
+        *;
+};

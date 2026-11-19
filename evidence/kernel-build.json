@@ -1,0 +1,32 @@
+{
+  "status": "compiled; not boot-tested; not Android 13-compatible by this result",
+  "kernel_version": "3.18.22",
+  "kernel_source": "https://github.com/acer-b1-790/android_kernel_acer_b1-790",
+  "kernel_source_commit": "d65e8c4b0f64f36603a16a3a3c386b17a5240d01",
+  "compiler_source": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+  "compiler_commit": "4b341df712969ca2ac0c3cf6294260d406b9d9be",
+  "compiler_version": "GCC 4.9.x-google 20140827",
+  "host_only_flags": "-O2 -fcommon -std=gnu89",
+  "target": "Image.gz-dtb",
+  "bytes": 6310013,
+  "sha256": "6cacff63e7da0677c9e70f417b0da4a25d8f743282073e979cfbed6a9e738221",
+  "arm64_image_magic_verified": true,
+  "appended_dtb_bytes": 53842,
+  "dtb_properties_match_stock_reference": true,
+  "panel_driver_object_compiled": "drivers/misc/mediatek/lcm/nt71397_wuxga_dsi_vdo_nt65902/nt71397_wuxga_dsi_vdo_nt65902.o",
+  "touch_driver_object_compiled": "drivers/input/touchscreen/mediatek/EKTH3386/ektf_mtk.o",
+  "warnings": {
+    "section_mismatches": 42,
+    "note": "Build completed with 42 section mismatches; their cause and runtime impact have not been established."
+  },
+  "hardware_validation": "NOT PERFORMED",
+  "android13_validation": "NOT PERFORMED",
+  "github_actions": "Jobs were rejected by the service before any runner steps started; the build reported here ran locally.",
+  "development_packaging_check": {
+    "new_kernel_mtk_header_and_android_hash": "verified",
+    "boot_addresses": "preserved",
+    "signature_trailer": "omitted",
+    "recovery_partition_size_limit": "passed",
+    "note": "Format check with original stock recovery ramdisk only; no custom recovery functionality or bootability validation"
+  }
+}

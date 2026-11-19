@@ -66,7 +66,7 @@
     "repository": "https://github.com/acer-b1-790/android_kernel_acer_b1-790",
     "commit": "d65e8c4b0f64f36603a16a3a3c386b17a5240d01",
     "version": "3.18.22",
-    "status": "partial patch generated; not compiled or hardware-tested"
+    "status": "compiled locally; not boot-tested; not Android 13-validated"
   },
   "blockers": [
     "Exact Acer defconfig has not been reconstructed; inherited battery/camera/sensor settings remain unverified",
@@ -76,7 +76,7 @@
     "No complete Android source/build environment in this approximately 8 GiB workspace"
   ],
   "validation": {
-    "binary_unit_tests_passed": 8,
+    "binary_unit_tests_passed": 10,
     "stock_boot_roundtrip": "byte-identical",
     "stock_recovery_roundtrip": "byte-identical",
     "unsigned_stock_recovery_repack": "original body byte-identical; signature omitted; not custom recovery",
@@ -90,6 +90,18 @@
       "provider_count": 29,
       "runtime_compatibility": "NOT TESTED",
       "android13_compatibility": "NOT TESTED"
-    }
+    },
+    "kernel_configuration_generated": {
+      "display": [
+        1920,
+        1200
+      ],
+      "touch_driver": "CONFIG_TOUCHSCREEN_MTK_EKTH3386=y",
+      "touch_internal_firmware_programming_blocked": true,
+      "goodix_disabled": true,
+      "source": "Kconfig output from the pinned donor with the current hardware patch; no hardware test"
+    },
+    "kernel_compilation": "Image.gz-dtb produced locally; see kernel-build.json",
+    "graphics_lock_forwarding_tests_passed": 3
   }
 }

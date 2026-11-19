@@ -8,6 +8,11 @@ build_root="${ACER_BUILD_DIR:-$project_root/out/kernel-work}"
 artifact_root="$project_root/out/kernel-investigation"
 kernel_sha=d65e8c4b0f64f36603a16a3a3c386b17a5240d01
 toolchain_sha=4b341df712969ca2ac0c3cf6294260d406b9d9be
+build_jobs="${ACER_JOBS:-2}"
+if [[ ! "$build_jobs" =~ ^[1-9][0-9]*$ ]]; then
+    echo 'ACER_JOBS must be a positive integer' >&2
+    exit 1
+fi
 mkdir -p "$build_root" "$artifact_root"
 exec > >(tee "$artifact_root/build.log") 2>&1
 
@@ -48,13 +53,16 @@ printf 'kernel=%s\ntoolchain=%s\n' "$kernel_sha" "$toolchain_sha" > "$artifact_r
 # Old shipped dtc sources use common globals. Keep this host-only workaround
 # separate from flags for the actual ARM64 kernel compiled with GCC 4.9.
 make -C "$build_root/kernel" O="$build_root/obj" ARCH=arm64 \
-    CROSS_COMPILE="$compiler" HOSTCFLAGS='-O2 -fcommon' \
+    CROSS_COMPILE="$compiler" HOSTCFLAGS='-O2 -fcommon -std=gnu89' \
     acer_jetfirefhd_bringup_defconfig
 cp "$build_root/obj/.config" "$artifact_root/kernel.config"
 
 make -C "$build_root/kernel" O="$build_root/obj" ARCH=arm64 \
-    CROSS_COMPILE="$compiler" HOSTCFLAGS='-O2 -fcommon' \
-    -j"$(nproc)" Image.gz-dtb
+    CROSS_COMPILE="$compiler" HOSTCFLAGS='-O2 -fcommon -std=gnu89' \
+    -j"$build_jobs" Image.gz-dtb
 cp "$build_root/obj/arch/arm64/boot/Image.gz-dtb" "$artifact_root/"
-sha256sum "$artifact_root/Image.gz-dtb" > "$artifact_root/kernel.sha256"
+(
+    cd "$artifact_root"
+    sha256sum Image.gz-dtb > kernel.sha256
+)
 echo 'Kernel compilation completed; hardware compatibility and Android 13 support remain unverified.'

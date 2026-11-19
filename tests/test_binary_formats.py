@@ -70,6 +70,23 @@ class BootTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             BootImage(data)
 
+    def test_new_arm64_kernel_updates_mtk_and_android_lengths(self):
+        raw = bytearray(64)
+        raw[56:60] = b'ARM\x64'
+        dtb = struct.pack('>10I', 0xd00dfeed, 40, 0, 0, 0, 17, 16, 0, 0, 0)
+        kernel = gzip.compress(bytes(raw)) + dtb
+        ramdisk = gzip.compress(b'070701new-cpio')
+        rebuilt = BootImage(BootImage(fixture()).development_recovery(ramdisk, kernel))
+        self.assertEqual(rebuilt.unwrap_mtk(rebuilt.sections[0], 'kernel'), kernel)
+        self.assertEqual(rebuilt.kernel_size, len(kernel) + 512)
+        self.assertEqual(rebuilt.trailer, b'')
+
+    def test_new_kernel_requires_appended_dtb(self):
+        raw = bytearray(64)
+        raw[56:60] = b'ARM\x64'
+        with self.assertRaises(ValueError):
+            BootImage(fixture()).development_recovery(gzip.compress(b'070701cpio'), gzip.compress(bytes(raw)))
+
 
 class SparseTests(unittest.TestCase):
     def sparse(self):

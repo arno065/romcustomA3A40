@@ -1,0 +1,19 @@
+{
+  "legacy_symbol": "_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv",
+  "target_symbol": "_ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPvPiS9_",
+  "consumers": [
+    "/system/lib/hw/hwcomposer.mt8163.so",
+    "/system/lib64/hw/hwcomposer.mt8163.so"
+  ],
+  "target_header_repository": "LineageOS/android_frameworks_native",
+  "target_header_ref": "lineage-20.0",
+  "target_header_path": "libs/ui/include/ui/GraphicBufferMapper.h",
+  "target_header_blob_sha": "507fa355a495caf2a1624567d91e6e9e5c75952d",
+  "aarch64_object_compiled": true,
+  "aarch64_object_sha256": "b1ae2e2183629c2a6a1647f249a4acd3ea41b2ddd3fb44a13427f11f6f2fec36",
+  "native_forwarding_tests_passed": 3,
+  "android_soong_build": "NOT PERFORMED",
+  "arm32_build": "NOT PERFORMED",
+  "android13_runtime_validation": "NOT PERFORMED",
+  "device_image_integration": "NOT PERFORMED"
+}

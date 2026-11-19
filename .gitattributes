@@ -1,3 +1,4 @@
 # Preserve upstream reference text and unified-diff context verbatim.
 evidence/candidate-* -whitespace
 kernel/patches/*.patch -whitespace
+evidence/*.log -whitespace

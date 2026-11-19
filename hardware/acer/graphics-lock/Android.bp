@@ -1,0 +1,12 @@
+// Candidate only: not installed or injected into a device image yet.
+cc_library_shared {
+    name: "libacer_graphics_lock_compat",
+    vendor: true,
+    compile_multilib: "both",
+    srcs: ["mapper_lock.c"],
+    c_std: "c11",
+    stl: "none",
+    shared_libs: ["libui"],
+    cflags: ["-Wall", "-Werror"],
+    version_script: "symbols.map.txt",
+}

@@ -9,6 +9,7 @@ import gzip
 import hashlib
 import json
 import struct
+import zlib
 from pathlib import Path
 
 MTK_MAGIC = 0x58881688
@@ -81,15 +82,29 @@ class BootImage:
     def stock_roundtrip(self):
         return self.header + b''.join(self.padded_sections) + self.trailer
 
-    def development_recovery(self, ramdisk_gzip):
+    def development_recovery(self, ramdisk_gzip, kernel_gzip_dtb=None):
         cpio = gzip.decompress(ramdisk_gzip)
         if not cpio.startswith((b'070701', b'070702')):
             raise ValueError('Recovery ramdisk must contain a newc CPIO archive')
         mtk_header = bytearray(self.sections[1][:512])
         struct.pack_into('<I', mtk_header, 4, len(ramdisk_gzip))
         mtk_header[8:40] = b'RECOVERY'.ljust(32, b'\0')
-        sections = [self.sections[0], bytes(mtk_header) + ramdisk_gzip, self.sections[2]]
+        kernel_section = self.sections[0]
+        if kernel_gzip_dtb is not None:
+            decoder = zlib.decompressobj(31)
+            kernel_image = decoder.decompress(kernel_gzip_dtb) + decoder.flush()
+            dtb = decoder.unused_data
+            if not decoder.eof or len(kernel_image) < 64 or kernel_image[56:60] != b'ARM\x64':
+                raise ValueError('Expected a gzip-compressed ARM64 Linux Image')
+            if len(dtb) < 40 or dtb[:4] != b'\xd0\x0d\xfe\xed' or struct.unpack_from('>I', dtb, 4)[0] != len(dtb):
+                raise ValueError('Expected one appended DTB with a consistent total size')
+            kernel_header = bytearray(self.sections[0][:512])
+            struct.pack_into('<I', kernel_header, 4, len(kernel_gzip_dtb))
+            kernel_header[8:40] = b'KERNEL'.ljust(32, b'\0')
+            kernel_section = bytes(kernel_header) + kernel_gzip_dtb
+        sections = [kernel_section, bytes(mtk_header) + ramdisk_gzip, self.sections[2]]
         header = bytearray(self.header)
+        struct.pack_into('<I', header, 8, len(sections[0]))
         struct.pack_into('<I', header, 16, len(sections[1]))
         header[576:608] = self.digest(sections).ljust(32, b'\0')
         result = bytes(header) + b''.join(s.ljust(align(len(s), self.page), b'\0') for s in sections)
@@ -113,6 +128,7 @@ def main():
     pack.add_argument('image', type=Path, help='Original Acer recovery.img')
     pack.add_argument('ramdisk', type=Path, help='New recovery CPIO compressed with gzip')
     pack.add_argument('output', type=Path)
+    pack.add_argument('--kernel', type=Path, help='Optional new ARM64 Image.gz-dtb; it will receive an MTK header')
     pack.add_argument('--unsigned-development', action='store_true', required=True)
     args = parser.parse_args()
     image = BootImage(args.image.read_bytes())
@@ -130,7 +146,8 @@ def main():
     else:
         if args.output.exists():
             raise FileExistsError('Refusing to overwrite an existing image')
-        args.output.write_bytes(image.development_recovery(args.ramdisk.read_bytes()))
+        kernel = args.kernel.read_bytes() if args.kernel else None
+        args.output.write_bytes(image.development_recovery(args.ramdisk.read_bytes(), kernel))
         print('Unsigned development image created. Not tested on hardware. No flashing performed.')
 
 

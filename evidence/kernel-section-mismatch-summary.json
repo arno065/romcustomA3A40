@@ -1,0 +1,82 @@
+[
+  {
+    "source": "mt_cpuidle_framework_init()",
+    "target": ".init.text:$x",
+    "count": 9
+  },
+  {
+    "source": "mt_usb_init()",
+    "target": ".init.data:$d",
+    "count": 2
+  },
+  {
+    "source": "get_max_DRAM_size()",
+    "target": ".init.text:$x",
+    "count": 1
+  },
+  {
+    "source": "dt_scan_memory()",
+    "target": ".init.text:of_get_flat_dt_prop()",
+    "count": 5
+  },
+  {
+    "source": "dt_scan_memory()",
+    "target": ".init.data:dt_root_addr_cells",
+    "count": 5
+  },
+  {
+    "source": "dt_scan_memory()",
+    "target": ".init.data:dt_root_size_cells",
+    "count": 5
+  },
+  {
+    "source": "dt_scan_memory()",
+    "target": ".init.text:dt_mem_next_cell()",
+    "count": 4
+  },
+  {
+    "source": "init_boot_common()",
+    "target": ".init.text:dt_get_boot_common()",
+    "count": 2
+  },
+  {
+    "source": "init_boot_common()",
+    "target": ".init.text:of_scan_flat_dt()",
+    "count": 1
+  },
+  {
+    "source": "init_boot_reason()",
+    "target": ".init.text:dt_get_boot_reason()",
+    "count": 2
+  },
+  {
+    "source": "init_boot_reason()",
+    "target": ".init.text:of_scan_flat_dt()",
+    "count": 1
+  },
+  {
+    "source": "_parse_tag_videolfb()",
+    "target": ".init.text:of_scan_flat_dt()",
+    "count": 1
+  },
+  {
+    "source": "_parse_tag_videolfb()",
+    "target": ".init.text:of_get_flat_dt_prop()",
+    "count": 1
+  },
+  {
+    "source": "systracker_platform_hook_fault()",
+    "target": ".init.text:hook_fault_code()",
+    "count": 1
+  },
+  {
+    "source": "atf_get_from_dt()",
+    "target": ".init.text:of_scan_flat_dt()",
+    "count": 1
+  },
+  {
+    "source": "atf_get_from_dt()",
+    "target": ".init.text:of_get_flat_dt_prop()",
+    "count": 1
+  }
+]

@@ -1,7 +1,8 @@
 # Acer Iconia A3-A40 — base de portage vers Android 13 ARM64
 
-État : **analyse du firmware et premier correctif matériel, sans ROM Android 13
-compilée, sans recovery personnalisé fonctionnel et sans essai sur tablette**.
+État : **premier noyau matériel 3.18.22 compilé et premier adaptateur graphique
+écrit, sans ROM Android 13 compilée, sans recovery personnalisé fonctionnel et
+sans essai sur tablette**.
 
 La cible reste LineageOS 20 / Android 13 allégé, ARM64 avec compatibilité ARM32.
 Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cible
@@ -20,6 +21,10 @@ Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cib
 - Reconstruction du corps du recovery d'origine vérifiée octet pour octet.
 - DTB décompilé et recompilé : propriétés, nœuds et réservations conservés.
 - Premier correctif source 3.18.22 préparé contre un dépôt Acer épinglé.
+- Compilation locale du noyau candidat jusqu'à `Image.gz-dtb` réussie ;
+  propriétés de son DTB comparées à celles du firmware d'origine.
+- Premier adaptateur `GraphicBufferMapper::lock` écrit et compilé en objet
+  AArch64. Sa liaison Android 13 et son fonctionnement matériel restent à tester.
 
 ## Sources et portée
 
@@ -66,6 +71,8 @@ source A3-A40 exacte validée** : sa configuration générique sélectionne un �
 - `kernel/reference/acer_jetfirefhd.stock.dts` : description matérielle issue du DTB
   Acer, non convertie aux interfaces d'un noyau 4.9.
 - `kernel/patches/` : correctif reproductible contre la source Acer épinglée.
+- `hardware/acer/graphics-lock/` : adaptateur graphique candidat et définition
+  Soong, non injectés dans une image à ce stade.
 - `evidence/` : faits observés, inventaires et limites ; aucune donnée utilisateur.
 
 ## Correctif noyau initial
@@ -110,11 +117,13 @@ Un ramdisk recovery déjà construit peut ensuite être empaqueté hors ligne :
 python tools/boot_image.py pack-recovery recovery-stock.img nouveau-ramdisk.cpio.gz recovery-dev.img --unsigned-development
 ```
 
-Le script conserve le noyau Acer de l'image passée en entrée et les adresses de
-chargement. Il ajoute l'en-tête MediaTek au nouveau ramdisk, recalcule le SHA-1
+Par défaut, le script conserve le noyau Acer de l'image passée en entrée et les adresses de
+chargement. L'option `--kernel Image.gz-dtb` permet d'empaqueter à la place un
+noyau ARM64 recompilé avec un unique DTB ajouté en fin de fichier. Il ajoute
+les en-têtes MediaTek nécessaires au noyau et au ramdisk, recalcule le SHA-1
 de l'en-tête et vérifie la limite de 16 Mio. Il retire la signature OEM devenue
 invalide : l'image produite n'est donc pas utilisable comme image OEM signée.
-Il ne compile pas TWRP, ne remplace pas le noyau par un noyau Android 13 et ne
+Il ne compile pas TWRP, ne rend pas le noyau compatible Android 13 et ne
 garantit pas le démarrage. La signature OEM d'origine n'a pas été vérifiée
 cryptographiquement.
 
@@ -139,7 +148,7 @@ cryptographiquement.
 
 Le workspace utilisé pour cette analyse dispose d'un volume d'environ 8 Gio :
 il suffit à cette extraction, pas à un arbre de sources et une compilation
-complète d'Android 13. Aucun build complet n'a été lancé.
+complète d'Android 13. Aucune compilation complète d'Android 13 n'a été lancée.
 
 ## Allègement visé
 
@@ -162,14 +171,30 @@ un artefact nommé `NOT-FLASHABLE-kernel-investigation`. Un succès de compilati
 ne validerait ni le matériel ni Android 13. Le script local équivalent est
 `bash kernel/build-candidate.sh`; il ne demande pas de droits administrateur.
 
+Les premières exécutions GitHub ont été refusées par le service avant le
+démarrage des étapes. La compilation réussie documentée dans
+[`evidence/kernel-build.json`](evidence/kernel-build.json) a été faite localement.
+Les journaux et la configuration effective sont également conservés dans
+`evidence/`. Les 42 avertissements de section remontés par l'édition de liens
+restent à analyser avant des essais matériels.
+
 ## État des validations
 
-- Huit tests sur les formats boot/MTK/sparse réussis.
+- Dix tests sur les formats boot/MTK/sparse réussis, dont l'empaquetage d'un
+  nouveau noyau ARM64 et le rejet d'un noyau sans DTB.
 - Quatre tests supplémentaires du contrôle d'ABI avec de vrais fichiers ELF
   compilés pour les tests : fournisseur compatible, symbole supprimé,
   bibliothèque absente et architecture incorrecte.
+- Trois tests du premier adaptateur graphique : **17 tests locaux au total**.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.
 - Aller-retour du DTB vérifié sur les propriétés et les réservations.
 - Correctif source contrôlé par `git diff --check` et vérification d'application.
-- Noyau candidat : non compilé, non testé sur matériel.
+- Noyau candidat : compilé localement en `Image.gz-dtb`, DTB vérifié ; non testé
+  sur matériel et non validé pour Android 13.
 - Android 13 : non compilé, non démarré ; aucune version flashable livrée.
+
+Le détail des interfaces restant à adapter est dans
+[`docs/compatibility-plan.md`](docs/compatibility-plan.md).
+
+Le premier adaptateur est décrit dans
+[`docs/graphics-lock-bridge.md`](docs/graphics-lock-bridge.md).

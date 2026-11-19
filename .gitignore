@@ -8,3 +8,5 @@ vendor-blobs/
 out/
 downloads/
 *.zip
+*.gz-dtb
+*.o

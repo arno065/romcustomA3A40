@@ -1,0 +1,252 @@
+WARNING: vmlinux.o(.text+0x31c8bc): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c8cc): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c8dc): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c8ec): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c8fc): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c90c): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c91c): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c92c): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x31c93c): Section mismatch in reference from the function mt_cpuidle_framework_init() to the variable .init.text:$x
+The function mt_cpuidle_framework_init() references
+the variable __init $x.
+This is often because mt_cpuidle_framework_init lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x35b798): Section mismatch in reference from the function mt_usb_init() to the variable .init.data:$d
+The function mt_usb_init() references
+the variable __initdata $d.
+This is often because mt_usb_init lacks a __initdata 
+annotation or the annotation of $d is wrong.
+
+WARNING: vmlinux.o(.text+0x35b7a0): Section mismatch in reference from the function mt_usb_init() to the variable .init.data:$d
+The function mt_usb_init() references
+the variable __initdata $d.
+This is often because mt_usb_init lacks a __initdata 
+annotation or the annotation of $d is wrong.
+
+WARNING: vmlinux.o(.text+0x385b58): Section mismatch in reference from the function get_max_DRAM_size() to the variable .init.text:$x
+The function get_max_DRAM_size() references
+the variable __init $x.
+This is often because get_max_DRAM_size lacks a __init 
+annotation or the annotation of $x is wrong.
+
+WARNING: vmlinux.o(.text+0x385bac): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:of_get_flat_dt_prop()
+The function dt_scan_memory() references
+the function __init of_get_flat_dt_prop().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x385bdc): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:of_get_flat_dt_prop()
+The function dt_scan_memory() references
+the function __init of_get_flat_dt_prop().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x385bec): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_addr_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_addr_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_addr_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x385bf0): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_size_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_size_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_size_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x385bfc): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_addr_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_addr_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_addr_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x385c04): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_size_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_size_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_size_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x385c30): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:dt_mem_next_cell()
+The function dt_scan_memory() references
+the function __init dt_mem_next_cell().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of dt_mem_next_cell is wrong.
+
+WARNING: vmlinux.o(.text+0x385c3c): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:dt_mem_next_cell()
+The function dt_scan_memory() references
+the function __init dt_mem_next_cell().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of dt_mem_next_cell is wrong.
+
+WARNING: vmlinux.o(.text+0x385c88): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:of_get_flat_dt_prop()
+The function dt_scan_memory() references
+the function __init of_get_flat_dt_prop().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0854): Section mismatch in reference from the function init_boot_common() to the function .init.text:dt_get_boot_common()
+The function init_boot_common() references
+the function __init dt_get_boot_common().
+This is often because init_boot_common lacks a __init 
+annotation or the annotation of dt_get_boot_common is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0860): Section mismatch in reference from the function init_boot_common() to the function .init.text:dt_get_boot_common()
+The function init_boot_common() references
+the function __init dt_get_boot_common().
+This is often because init_boot_common lacks a __init 
+annotation or the annotation of dt_get_boot_common is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0864): Section mismatch in reference from the function init_boot_common() to the function .init.text:of_scan_flat_dt()
+The function init_boot_common() references
+the function __init of_scan_flat_dt().
+This is often because init_boot_common lacks a __init 
+annotation or the annotation of of_scan_flat_dt is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0abc): Section mismatch in reference from the function init_boot_reason() to the function .init.text:dt_get_boot_reason()
+The function init_boot_reason() references
+the function __init dt_get_boot_reason().
+This is often because init_boot_reason lacks a __init 
+annotation or the annotation of dt_get_boot_reason is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0ac8): Section mismatch in reference from the function init_boot_reason() to the function .init.text:dt_get_boot_reason()
+The function init_boot_reason() references
+the function __init dt_get_boot_reason().
+This is often because init_boot_reason lacks a __init 
+annotation or the annotation of dt_get_boot_reason is wrong.
+
+WARNING: vmlinux.o(.text+0x3a0acc): Section mismatch in reference from the function init_boot_reason() to the function .init.text:of_scan_flat_dt()
+The function init_boot_reason() references
+the function __init of_scan_flat_dt().
+This is often because init_boot_reason lacks a __init 
+annotation or the annotation of of_scan_flat_dt is wrong.
+
+WARNING: vmlinux.o(.text+0x403bec): Section mismatch in reference from the function _parse_tag_videolfb() to the function .init.text:of_scan_flat_dt()
+The function _parse_tag_videolfb() references
+the function __init of_scan_flat_dt().
+This is often because _parse_tag_videolfb lacks a __init 
+annotation or the annotation of of_scan_flat_dt is wrong.
+
+WARNING: vmlinux.o(.text+0x403c08): Section mismatch in reference from the function _parse_tag_videolfb() to the function .init.text:of_get_flat_dt_prop()
+The function _parse_tag_videolfb() references
+the function __init of_get_flat_dt_prop().
+This is often because _parse_tag_videolfb lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x4f90a4): Section mismatch in reference from the function systracker_platform_hook_fault() to the function .init.text:hook_fault_code()
+The function systracker_platform_hook_fault() references
+the function __init hook_fault_code().
+This is often because systracker_platform_hook_fault lacks a __init 
+annotation or the annotation of hook_fault_code is wrong.
+
+WARNING: vmlinux.o(.text+0x533c40): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:of_get_flat_dt_prop()
+The function dt_scan_memory() references
+the function __init of_get_flat_dt_prop().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x533c70): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:of_get_flat_dt_prop()
+The function dt_scan_memory() references
+the function __init of_get_flat_dt_prop().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
+WARNING: vmlinux.o(.text+0x533c80): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_addr_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_addr_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_addr_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533c84): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_size_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_size_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_size_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533c88): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_size_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_size_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_size_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533c8c): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_addr_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_addr_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_addr_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533c94): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_addr_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_addr_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_addr_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533c98): Section mismatch in reference from the function dt_scan_memory() to the variable .init.data:dt_root_size_cells
+The function dt_scan_memory() references
+the variable __initdata dt_root_size_cells.
+This is often because dt_scan_memory lacks a __initdata 
+annotation or the annotation of dt_root_size_cells is wrong.
+
+WARNING: vmlinux.o(.text+0x533cb8): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:dt_mem_next_cell()
+The function dt_scan_memory() references
+the function __init dt_mem_next_cell().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of dt_mem_next_cell is wrong.
+
+WARNING: vmlinux.o(.text+0x533cc4): Section mismatch in reference from the function dt_scan_memory() to the function .init.text:dt_mem_next_cell()
+The function dt_scan_memory() references
+the function __init dt_mem_next_cell().
+This is often because dt_scan_memory lacks a __init 
+annotation or the annotation of dt_mem_next_cell is wrong.
+
+WARNING: vmlinux.o(.text+0x533f48): Section mismatch in reference from the function atf_get_from_dt() to the function .init.text:of_scan_flat_dt()
+The function atf_get_from_dt() references
+the function __init of_scan_flat_dt().
+This is often because atf_get_from_dt lacks a __init 
+annotation or the annotation of of_scan_flat_dt is wrong.
+
+WARNING: vmlinux.o(.text+0x533f74): Section mismatch in reference from the function atf_get_from_dt() to the function .init.text:of_get_flat_dt_prop()
+The function atf_get_from_dt() references
+the function __init of_get_flat_dt_prop().
+This is often because atf_get_from_dt lacks a __init 
+annotation or the annotation of of_get_flat_dt_prop is wrong.
+
