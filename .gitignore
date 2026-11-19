@@ -1,0 +1,10 @@
+__pycache__/
+*.img
+*.dtb
+*.ko
+*.so
+prebuilt/
+vendor-blobs/
+out/
+downloads/
+*.zip

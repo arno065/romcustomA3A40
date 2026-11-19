@@ -1,0 +1,22 @@
+{
+  "boot": {
+    "kernel_size": 6355522,
+    "kernel_addr": "0x40080000",
+    "ramdisk_size": 1899504,
+    "ramdisk_addr": "0x44000000",
+    "tags_addr": "0x4e000000",
+    "page_size": 2048,
+    "cmdline": "bootopt=64S3,32N2,64N2",
+    "kernel_sha256": "3ac70724f3db3054a4696d54e5d07e76717607526d124d7c97494aae7862de21"
+  },
+  "recovery": {
+    "kernel_size": 6355522,
+    "kernel_addr": "0x40080000",
+    "ramdisk_size": 2869035,
+    "ramdisk_addr": "0x44000000",
+    "tags_addr": "0x4e000000",
+    "page_size": 2048,
+    "cmdline": "bootopt=64S3,32N2,64N2",
+    "kernel_sha256": "3ac70724f3db3054a4696d54e5d07e76717607526d124d7c97494aae7862de21"
+  }
+}

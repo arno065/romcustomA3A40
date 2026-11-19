@@ -1,0 +1,7 @@
+# Recovery-only draft, v2 format. Mount system/data read-only during bring-up.
+# This is NOT an Android 13 encryption policy and cannot decrypt existing FDE.
+/dev/block/mmcblk0p20 /system ext4 ro wait
+/dev/block/mmcblk0p22 /data ext4 ro wait
+/dev/block/mmcblk0p21 /cache ext4 ro wait
+/dev/block/mmcblk0p8 /boot emmc defaults defaults
+/dev/block/mmcblk0p9 /recovery emmc defaults defaults

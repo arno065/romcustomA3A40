@@ -1,0 +1,616 @@
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam0@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam0@1: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam0@2: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam0@3: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam1@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam1@1: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam1@2: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/cam1@3: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/eint@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/gpslna@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/gpslna@1: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/gpslna@2: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/i2c0@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/i2c1@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/i2c2@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/mmc0@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/pinctrl@10005000/mmc1@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/cpuxgpt@10200000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/i2c@11007000/key@44: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_ul1_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voice_md1@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_hdmi_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_uldlloopback@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_i2s0_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_mrgrx_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_mrgrx_awb_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_fm_i2s_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_fm_i2s_awb_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_i2s0dl1_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_dl1_awb_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voice_md1_bt@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voip_bt_out@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voip_bt_in@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_tdmrx_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_fm_mrgtx_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_ul2_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_i2s0_awb_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voice_md2@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_routing_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_voice_md2_bt@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_hp_impedance@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_codec_name@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_dummy_pcm@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_codec_dummy_name@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_routing_dai_name@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mt_soc_dai_name@11220000: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/hwmsensor@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/gsensor@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/als_ps@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/batchsensor@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/gyroscope@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/barometer@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/msensor@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/orientation@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@1: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@2: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@3: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@4: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@5: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/led@6: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /soc/mtkfb@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /cust_accel@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /cust_gyro@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /cust_mag@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_vs_reg): /vibrator@0: node has a unit name, but no reg or ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_format): /soc/i2c@11007000/camera_main_af@0c: unit name should not have leading 0s
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_format): /soc/i2c@11009000/msensor@0c: unit name should not have leading 0s
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unit_address_format): /memory@00000000: unit name should not have leading 0s
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /clocks/clk_null: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /clocks/clk26m: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /clocks/clk32k: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /clocks/dummy26m: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/chipid@08000000: simple-bus unit address format error, expected "8000000"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/pinctrl@10005000: simple-bus unit address format error, expected "1000b000"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/pwrap@0x1000d000: simple-bus unit address format error, expected "1000d000"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/cpuxgpt@10200000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_ul1_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voice_md1@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_hdmi_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_uldlloopback@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_i2s0_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_mrgrx_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_mrgrx_awb_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_fm_i2s_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_fm_i2s_awb_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_i2s0dl1_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_dl1_awb_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voice_md1_bt@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voip_bt_out@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voip_bt_in@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_tdmrx_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_fm_mrgtx_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_ul2_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_i2s0_awb_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voice_md2@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_routing_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_voice_md2_bt@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_hp_impedance@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_codec_name@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_dummy_pcm@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_codec_dummy_name@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_routing_dai_name@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt_soc_dai_name@11220000: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mt8163-dispsys: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/isp_display: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/ispsys@15000000: simple-bus unit address format error, expected "15004000"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/btcvsd@18000000: simple-bus unit address format error, expected "10001000"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/accdet@: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/touch@: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/gps: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/hwmsensor@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/gsensor@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/als_ps@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/batchsensor@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/gyroscope@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/barometer@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/msensor@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/orientation@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@1: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@2: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@3: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@4: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@5: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/led@6: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mtkfb@0: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/bat_meter: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/BAT_NOTIFY: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/bat_comm: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/dumchar: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/flashlight@: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/ice_debug: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/isp_pipemgr: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/isp_sysram: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (simple_bus_reg): /soc/mtee: missing or empty reg/ranges property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (i2c_bus_reg): /soc/i2c@11007000/camera_main_af@0c: I2C bus unit address format error, expected "c"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (i2c_bus_reg): /soc/i2c@11007000/key@44: missing or empty reg property
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (i2c_bus_reg): /soc/i2c@11009000/msensor@0c: I2C bus unit address format error, expected "c"
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_accel@0: duplicate unit-address (also used in node /cust_gyro@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_accel@0: duplicate unit-address (also used in node /cust_mag@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_gyro@0: duplicate unit-address (also used in node /cust_mag@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_accel@0: duplicate unit-address (also used in node /vibrator@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_gyro@0: duplicate unit-address (also used in node /vibrator@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /cust_mag@0: duplicate unit-address (also used in node /vibrator@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/syscfg_pctl_a@10005000: duplicate unit-address (also used in node /soc/pinctrl@10005000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mcucfg@10200000: duplicate unit-address (also used in node /soc/cpuxgpt@10200000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mcucfg@10200000: duplicate unit-address (also used in node /soc/lastpc@10200000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/cpuxgpt@10200000: duplicate unit-address (also used in node /soc/lastpc@10200000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/thermal@1100b000: duplicate unit-address (also used in node /soc/ptp_od@1100b000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_hdmi_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hdmi_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hdmi_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_hdmi_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_uldlloopback@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_uldlloopback@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_uldlloopback@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_uldlloopback@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_uldlloopback@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_mrgrx_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_i2s_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0dl1_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dl1_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md1_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_out@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_voip_bt_in@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_tdmrx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_fm_mrgtx_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_ul2_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_i2s0_awb_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_voice_md2_bt@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_hp_impedance@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hp_impedance@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hp_impedance@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_dummy_pcm@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hp_impedance@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dummy_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_codec_dummy_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hp_impedance@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dummy_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_dummy_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_routing_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/audiosys@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hdmi_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_uldlloopback@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_mrgrx_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_i2s_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0dl1_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dl1_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md1_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_out@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voip_bt_in@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_tdmrx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_fm_mrgtx_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_ul2_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_i2s0_awb_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_voice_md2_bt@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_hp_impedance@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_dummy_pcm@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_codec_dummy_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/mt_soc_routing_dai_name@11220000: duplicate unit-address (also used in node /soc/mt_soc_dai_name@11220000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/topckgen@10000000: duplicate unit-address (also used in node /soc/disp_config3@10000000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/syscfg_pctl_a@10005000: duplicate unit-address (also used in node /soc/disp_io_driving@10005000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/pinctrl@10005000: duplicate unit-address (also used in node /soc/disp_io_driving@10005000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/smi@14017000: duplicate unit-address (also used in node /soc/met_smi@14017000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/imgsys@15000000: duplicate unit-address (also used in node /soc/ispsys@15000000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/camera1@15008000: duplicate unit-address (also used in node /soc/camera2@15008000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/vdecsys@16000000: duplicate unit-address (also used in node /soc/vdec_gcon@16000000)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/gsensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/als_ps@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/als_ps@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/batchsensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/batchsensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/batchsensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/gyroscope@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/gyroscope@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/gyroscope@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/gyroscope@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/barometer@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/barometer@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/barometer@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/barometer@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gyroscope@0: duplicate unit-address (also used in node /soc/barometer@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gyroscope@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/barometer@0: duplicate unit-address (also used in node /soc/msensor@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gyroscope@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/barometer@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/msensor@0: duplicate unit-address (also used in node /soc/orientation@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gyroscope@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/barometer@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/msensor@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/orientation@0: duplicate unit-address (also used in node /soc/led@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/hwmsensor@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gsensor@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/als_ps@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/batchsensor@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/gyroscope@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/barometer@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/msensor@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/orientation@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (unique_unit_address): /soc/led@0: duplicate unit-address (also used in node /soc/mtkfb@0)
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/syscfg_pctl_a@10005000 or bad phandle (referred from audclk-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/pinctrl@10005000/pinconf_default or bad phandle (referred from audmiso-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /clocks/clk26m or bad phandle (referred from audmosi-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/pinctrl@10005000/uart2_rx_clear or bad phandle (referred from extspkamp-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/pinctrl@10005000/mmc0default or bad phandle (referred from i2s1clk-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/pinctrl@10005000/audexamplow or bad phandle (referred from i2s1dat-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /soc/pinctrl@10005000/uart0_tx_set or bad phandle (referred from i2s1mclk-gpio[0])
+/workspace/work/acer-a3a40/kernel/reference/acer_jetfirefhd.stock.dts: Warning (gpios_property): /soc/mt_soc_dl1_pcm@11220000: Missing property '#gpio-cells' in node /clocks/clk_null or bad phandle (referred from i2s1ws-gpio[0])

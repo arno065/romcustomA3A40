@@ -1,0 +1,95 @@
+{
+  "target": {
+    "model": "A3-A40",
+    "device": "acer_jetfirefhd",
+    "android": 13,
+    "lineage": "20.0",
+    "architecture": "arm64 + arm32"
+  },
+  "firmware_analyzed": {
+    "build": "Acer_AV0M0_A3-A40_0.013.00_WW_GEN1",
+    "image_revision": "RV01RC13",
+    "sdk": 23,
+    "kernel": "3.18.22",
+    "security_patch": "2016-03-01",
+    "archive_sha256": "e3acc6e203d038159c438968fd94c6e4261d8b67d81597f1fccc37c25b367830"
+  },
+  "owner_firmware": {
+    "build": "Acer_AV0M0_A3-A40_9.001.00_WW_GEN1",
+    "security_patch": "2017-05-05",
+    "kernel": "3.18.22",
+    "unlocked": false,
+    "source": "ADB and Fastboot reports supplied by the owner"
+  },
+  "partitions": {
+    "boot": {
+      "device": "/dev/block/mmcblk0p8",
+      "bytes": 16777216
+    },
+    "recovery": {
+      "device": "/dev/block/mmcblk0p9",
+      "bytes": 16777216
+    },
+    "system": {
+      "device": "/dev/block/mmcblk0p20",
+      "bytes": 3758096384
+    },
+    "cache": {
+      "device": "/dev/block/mmcblk0p21",
+      "bytes": 536870912
+    },
+    "userdata": {
+      "device": "/dev/block/mmcblk0p22",
+      "bytes": 26763329536
+    }
+  },
+  "hardware_evidence": {
+    "touch_driver_symbols": [
+      "ekth3260_open",
+      "eKTH3260_parse_dt",
+      "elan_ktf_ts_probe"
+    ],
+    "panel_driver_string": "NT71397_WUXGA_DSI_VDO_NT65902",
+    "touch_dt_resolution": [
+      1920,
+      1200
+    ],
+    "lcd_density": 240,
+    "touch_i2c_address": "0x10",
+    "touch_irq_gpio": 35,
+    "touch_reset_gpio": 45,
+    "lcm_power_gpio": 84,
+    "lcm_reset_gpio": 30,
+    "source": "extracted stock kernel strings and DTB; runtime selection on owner unit not confirmed"
+  },
+  "kernel_candidate": {
+    "repository": "https://github.com/acer-b1-790/android_kernel_acer_b1-790",
+    "commit": "d65e8c4b0f64f36603a16a3a3c386b17a5240d01",
+    "version": "3.18.22",
+    "status": "partial patch generated; not compiled or hardware-tested"
+  },
+  "blockers": [
+    "Exact Acer defconfig has not been reconstructed; inherited battery/camera/sensor settings remain unverified",
+    "No Android 13-compatible Acer kernel validated",
+    "ARM64 legacy graphics/audio HAL ABI adapters not implemented",
+    "Legacy vendor layout and Android 13 encryption policy not implemented",
+    "No complete Android source/build environment in this approximately 8 GiB workspace"
+  ],
+  "validation": {
+    "binary_unit_tests_passed": 8,
+    "stock_boot_roundtrip": "byte-identical",
+    "stock_recovery_roundtrip": "byte-identical",
+    "unsigned_stock_recovery_repack": "original body byte-identical; signature omitted; not custom recovery",
+    "dtb_roundtrip": "all decoded nodes/properties/reservations preserved",
+    "kernel_patch_reverse_apply_check": "passed",
+    "android13_compilation": "not performed",
+    "hardware_testing": "not performed",
+    "abi_unit_tests_passed": 4,
+    "stock_mali_arm64_abi_baseline": {
+      "static_symbol_check_passed": true,
+      "provider_count": 29,
+      "runtime_compatibility": "NOT TESTED",
+      "android13_compatibility": "NOT TESTED"
+    }
+  }
+}

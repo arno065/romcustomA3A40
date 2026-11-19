@@ -1,0 +1,15 @@
+{
+  "model": "Acer Iconia Tab 10 A3-A40",
+  "stock_build": "Acer_AV0M0_A3-A40_0.013.00_WW_GEN1",
+  "image_revision": "RV01RC13",
+  "listing": "https://firmwarefile.com/acer-iconia-tab-10-a3-a40/",
+  "download_page": "https://drive.google.com/file/d/1e0ZUeR3RANvcm9vKj1HIHe1NVLBWpIoT/view",
+  "download_url": "https://drive.usercontent.google.com/download?id=1e0ZUeR3RANvcm9vKj1HIHe1NVLBWpIoT&export=download",
+  "filename": "Acer_Iconia_Tab_10_A3-A40_MT8163_0.013.00_WW_GEN1_010516_6.0_(by_firmwarefile.com).zip",
+  "bytes": 1502951674,
+  "sha256": "e3acc6e203d038159c438968fd94c6e4261d8b67d81597f1fccc37c25b367830",
+  "provenance": "Third-party mirror of an older stock Acer firmware; no OEM authenticity certification is implied.",
+  "owner_build": "Acer_AV0M0_A3-A40_9.001.00_WW_GEN1",
+  "same_as_owner_build": false,
+  "git_policy": "Keep original archives, firmware blobs, NVRAM and user/device-specific dumps outside Git. Preserve source URLs and hashes here."
+}

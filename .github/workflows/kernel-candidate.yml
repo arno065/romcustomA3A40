@@ -1,0 +1,27 @@
+name: Experimental Acer kernel candidate
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  kernel:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential bc bison flex libssl-dev libelf-dev libncurses5 libtinfo5 python3 device-tree-compiler
+      - name: Build the investigation kernel
+        run: bash kernel/build-candidate.sh
+      - name: Keep build logs and available investigation artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NOT-FLASHABLE-kernel-investigation
+          path: out/kernel-investigation/
+          if-no-files-found: warn
+          retention-days: 30

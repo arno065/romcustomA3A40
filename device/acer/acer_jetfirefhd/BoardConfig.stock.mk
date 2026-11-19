@@ -1,0 +1,36 @@
+# Measured from Acer 0.013.00 boot/recovery and the owner's partition reports.
+# This fragment records original geometry; it does not certify Android 13 support.
+TARGET_BOARD_PLATFORM := mt8163
+TARGET_BOOTLOADER_BOARD_NAME := NEOSTRA8163_TB_M
+
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+
+# Addresses reproduce 0x40080000 / 0x44000000 / 0x4e000000.
+BOARD_KERNEL_BASE := 0x40000000
+BOARD_KERNEL_OFFSET := 0x00080000
+BOARD_RAMDISK_OFFSET := 0x04000000
+BOARD_KERNEL_TAGS_OFFSET := 0x0e000000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_BOOT_HEADER_VERSION := 0
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+
+BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
+BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 26763329536
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_USERIMAGES_USE_EXT4 := true
+
+# No separate vendor/super slots were found in the device report.
+# Do not import Karnak's vendor partition or Amazon boot/recovery geometry.
+# Stock gzip + 512-byte MTK wrappers must be handled by a custom pack step.
