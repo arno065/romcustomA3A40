@@ -6,8 +6,9 @@ sans essai de recovery personnalisé sur tablette**.
 
 Le [portage TWRP](docs/twrp-port.md) dispose maintenant d'un arbre appareil
 séparé, d'une recette locale et de contrôles d'empaquetage. La construction sur
-Actions a atteint la génération d'image ; le dernier échec communiqué concernait
-la taille. La réduction des ressources attend un résultat de build communiqué.
+Actions a terminé la génération d'image après réduction des ressources. Le
+dernier échec communiqué concernait notre validateur SHA-1 ; sa correction est
+testée sur une image synthétique produite par le mkbootimg Omni amont.
 
 Le [collecteur PowerShell](tools/Collect-AcerDiagnostics.ps1) prépare les
 diagnostics sous Android d'origine ou en recovery. Voir la
@@ -209,7 +210,8 @@ restent à analyser avant des essais matériels.
 - Cinq tests du décodeur de branches ARM64 et quatre tests d'intégration du
   collecteur PowerShell avec un faux ADB.
 - Six tests de réduction des ressources et de calcul de taille :
-  **54 tests locaux réussis** dans
+  deux tests supplémentaires couvrent le SHA-1 Omni et le rejet de corruption.
+  **56 tests locaux réussis** dans
   l'environnement d'analyse. Les tests PowerShell sont ignorés si son runtime
   n'est pas disponible ; aucun test sur tablette ou Windows 5.1 n'est revendiqué.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.

@@ -1,5 +1,7 @@
 import gzip
+import base64
 import hashlib
+import json
 import stat
 import struct
 import sys
@@ -51,7 +53,13 @@ def standard_recovery(ramdisk):
     sections = [b'built-kernel-fixture', ramdisk, b'']
     struct.pack_into('<I', header, 8, len(sections[0]))
     struct.pack_into('<I', header, 16, len(sections[1]))
-    header[576:608] = BootImage.digest(sections).ljust(32, b'\0')
+    # Match Omni mkbootimg's update_sha(kernel/ramdisk/second/dt), independently
+    # of the stock Acer helper; no separate DT payload is supplied here.
+    digest = hashlib.sha1()
+    for data in sections + [b'']:
+        digest.update(data)
+        digest.update(struct.pack('<I', len(data)))
+    header[576:608] = digest.digest().ljust(32, b'\0')
     return bytes(header) + b''.join(s.ljust(align(len(s), 2048), b'\0') for s in sections)
 
 
@@ -150,6 +158,30 @@ class PackagingTests(unittest.TestCase):
 
 
 class BuiltRamdiskTests(unittest.TestCase):
+    def test_golden_image_generated_by_upstream_omni_mkbootimg(self):
+        vector = json.loads((Path(__file__).parent / 'fixtures/omni-v0-no-dt.json').read_text())
+        raw = gzip.decompress(base64.b64decode(vector['image_gzip_base64']))
+        self.assertEqual(hashlib.sha256(raw).hexdigest(), vector['image_sha256'])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'recovery.img').write_bytes(raw)
+            compressed, source = twrp_port.built_ramdisk(root)
+            self.assertEqual(hashlib.sha256(compressed).hexdigest(), vector['ramdisk_sha256'])
+            self.assertEqual(source, 'recovery.img:ramdisk')
+
+    def test_corruption_rejected_for_both_supported_hash_conventions(self):
+        for extra_empty_dt in (False, True):
+            with self.subTest(empty_dt=extra_empty_dt), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                ramdisk = cpio(probe_items())
+                raw = bytearray(standard_recovery(ramdisk))
+                sections = [b'built-kernel-fixture', ramdisk, b'']
+                raw[576:596] = BootImage.digest(sections + ([b''] if extra_empty_dt else []))
+                raw[4096] ^= 1
+                (root / 'recovery.img').write_bytes(raw)
+                with self.assertRaisesRegex(ValueError, 'SHA-1'):
+                    twrp_port.built_ramdisk(root)
+
     def test_prefer_verified_recovery_image_over_intermediate(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

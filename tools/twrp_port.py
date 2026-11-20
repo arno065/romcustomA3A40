@@ -171,7 +171,12 @@ def built_ramdisk(product_out):
                 raise ValueError('Truncated built recovery.img section')
             sections.append(raw[pos:pos + size])
             pos = end
-        if BootImage.digest(sections) != raw[576:596]:
+        # Omni's Android 9 mkbootimg hashes a fourth length for --dt even
+        # when no DT image is supplied. Acer's historical tool hashes only
+        # kernel/ramdisk/second. Header v0 above guarantees DT size is zero.
+        # Accept these two defined formats, never a missing/mismatched hash.
+        valid_ids = {BootImage.digest(sections), BootImage.digest(sections + [b''])}
+        if raw[576:596] not in valid_ids:
             raise ValueError('Built recovery.img header SHA-1 mismatch')
         payload = sections[1]
         if payload[:4] == struct.pack('<I', MTK_MAGIC):

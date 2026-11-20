@@ -1,0 +1,15 @@
+{
+  "source_url": "https://github.com/omnirom/android_system_core_old/blob/android-9.0/mkbootimg/mkbootimg",
+  "reference_script_sha256": "419e8856cf4e3b8c06dd6caa3c4edc5de4e7192ab716a1e6eee402e381efd058",
+  "reported_stage": "TWRP recoveryimage build completed; our post-build SHA-1 validator failed",
+  "root_cause": "Omni Android 9 mkbootimg includes a fourth zero-length DT field in the digest for header v0 without --dt; stock Acer hashes three sections",
+  "golden_image_sha256": "6b8c82fe12818b64ab366476e5d85b7e353824eb3adbaf50349f26823cc870c0",
+  "legacy_three_section_sha1": "f9c17ff3d8877ae0fdc02ae948a92918147761dc",
+  "omni_four_section_sha1": "5572d9d2f517b0f3caac98c175f12695889e6c52",
+  "old_validator_rejects_upstream_golden": true,
+  "fixed_validator_preserves_integrity_checks": true,
+  "corruption_rejected": "Tested for both three-section and four-section conventions",
+  "stock_acer_packer": "unchanged; uses the stock three-section convention",
+  "full_recovery_artifact_checked": "NOT PERFORMED; diagnosis from supplied log and upstream source, regression on synthetic upstream-generated image",
+  "actions_started_or_monitored": 0
+}

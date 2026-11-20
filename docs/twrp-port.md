@@ -1,9 +1,10 @@
 # Portage TWRP pour Acer A3-A40
 
 État : arbre appareil préparé, extraction du noyau stock et empaquetage contrôlés
-hors ligne. La construction Actions a atteint la génération d'image ; le dernier
-échec communiqué était un dépassement de taille, traité par réduction des
-ressources. **Aucune nouvelle image recovery n'a été testée sur tablette.**
+hors ligne. La construction Actions a terminé la génération d'image après
+réduction des ressources. Le dernier échec communiqué concernait le SHA-1 dans
+notre inspection ; le correctif est couvert par un test sur une image produite
+avec le mkbootimg Omni amont. **Aucune nouvelle image recovery n'a été testée sur tablette.**
 Le noyau expérimental publié précédemment n'est pas TWRP. Le diagnostic reçu du
 propriétaire est une [référence Android d'origine](owner-runtime-baseline.md).
 
@@ -105,6 +106,15 @@ noyau du modèle, recalcule le SHA-1 Android, retire l'ancienne signature OEM et
 refuse une image dépassant 16 Mio. Les dépendances ELF et la politique SELinux
 restent à vérifier après compilation. Une validation de structure n'est pas une
 validation de démarrage.
+
+Le contrôle du SHA-1 de l'image intermédiaire reconnaît les deux conventions
+du header v0 : trois sections pour l'ancien outil Acer, ou quatre tailles
+(dont le DT absent de taille zéro) pour le mkbootimg Omni Android 9. Il vérifie
+effectivement le hash dans les deux cas et refuse une image corrompue. Le packer
+final Acer conserve sa convention stock. Un vecteur synthétique indépendant,
+généré par l'outil Omni amont, est conservé dans
+`tests/fixtures/omni-v0-no-dt.json` ; les détails du correctif sont dans
+[`evidence/omni-boot-id-regression.json`](../evidence/omni-boot-id-regression.json).
 
 ## Taille du ramdisk
 
