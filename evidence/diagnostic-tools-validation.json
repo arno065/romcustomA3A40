@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-20",
+  "tests_total_passed": 48,
+  "aarch64_branch_decoder_tests": 5,
+  "collector_integration_tests": 4,
+  "collector_test_runtime": "PowerShell 7.4.6 on Linux with a synthetic executable replacing adb",
+  "cases": [
+    "Normal collection with paths containing spaces and brackets; ZIP and SHA-256 generated",
+    "Stock Android baseline not mistaken for TWRP",
+    "Multiple/unauthorized devices stop before remote shell",
+    "Individual command timeout retained; subsequent diagnostics continue",
+    "Permission error retained rather than aborting all collection"
+  ],
+  "powershell_native_parser": "passed",
+  "windows_powershell_5_1_runtime_test": "NOT PERFORMED",
+  "tablet_testing": "NOT PERFORMED",
+  "actions_started_or_monitored_for_this_work": 0
+}

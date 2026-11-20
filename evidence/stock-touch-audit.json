@@ -1,0 +1,1126 @@
+{
+  "raw_image_sha256": "3ac70724f3db3054a4696d54e5d07e76717607526d124d7c97494aae7862de21",
+  "reconstructed_kernel_bytes_match": true,
+  "virtual_base": "0xffffffc000080000",
+  "roots": [
+    "elan_ktf_ts_probe",
+    "elan_ic_init_work"
+  ],
+  "driver_scan_address_range": [
+    "0xffffffc00066b000",
+    "0xffffffc000671000"
+  ],
+  "reachable_driver_functions": [
+    "__elan_ktf_ts_poll",
+    "__fw_packet_handler",
+    "__hello_packet_handler",
+    "elan_ic_init_work",
+    "elan_ktf_ts_get_data.constprop.21",
+    "elan_ktf_ts_hw_reset",
+    "elan_ktf_ts_probe"
+  ],
+  "firmware_updater_reachable_via_decoded_direct_branches": false,
+  "reachable_driver_indirect_branches": {
+    "elan_ktf_ts_probe": [
+      "0xffffffc00066ece4"
+    ]
+  },
+  "functions": {
+    "Update_FW_in_Driver.isra.17": {
+      "address": "0xffffffc0006701cc",
+      "bytes": 892,
+      "calls": [
+        {
+          "pc": "0xffffffc0006701fc",
+          "target": "mutex_lock",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670230",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670240",
+          "target": "EnterISPMode",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067024c",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670268",
+          "target": "i2c_master_recv",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670288",
+          "target": "i2c_master_send",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670308",
+          "target": "i2c_master_send",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670314",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670334",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067034c",
+          "target": "GetAckData",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670368",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067039c",
+          "target": "mutex_unlock",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006703d0",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006703e4",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670404",
+          "target": "print_progress",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670420",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067042c",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670444",
+          "target": "__hello_packet_handler",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670454",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067045c",
+          "target": "mutex_unlock",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670480",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006704a4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006704c0",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006704dc",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc0006704ec",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067051c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00067052c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc000670540",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "__elan_ktf_ts_poll": {
+      "address": "0xffffffc00066c5d8",
+      "bytes": 308,
+      "calls": [
+        {
+          "pc": "0xffffffc00066c618",
+          "target": "gpio_to_desc",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066c61c",
+          "target": "gpiod_get_raw_value",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066c644",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066c6b4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066c6c8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066c6f8",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "__fw_packet_handler": {
+      "address": "0xffffffc00066e630",
+      "bytes": 444,
+      "calls": [
+        {
+          "pc": "0xffffffc00066e690",
+          "target": "elan_ktf_ts_get_data.constprop.21",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e6d4",
+          "target": "elan_ktf_ts_get_data.constprop.21",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e714",
+          "target": "elan_ktf_ts_get_data.constprop.21",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e75c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e770",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e784",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e7a4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e7c4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e7d4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e7e4",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "__hello_packet_handler": {
+      "address": "0xffffffc00066eaa0",
+      "bytes": 368,
+      "calls": [
+        {
+          "pc": "0xffffffc00066eaf0",
+          "target": "__elan_ktf_ts_poll",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eb04",
+          "target": "i2c_master_recv",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eb3c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eb64",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eb68",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eb74",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ec08",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "elan_ic_init_work": {
+      "address": "0xffffffc00066f7e8",
+      "bytes": 928,
+      "calls": [
+        {
+          "pc": "0xffffffc00066f804",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f834",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f848",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f86c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f878",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f890",
+          "target": "disable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f8b8",
+          "target": "enable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f8c4",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f8d8",
+          "target": "disable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f8e0",
+          "target": "__fw_packet_handler",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f8f4",
+          "target": "enable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f918",
+          "target": "disable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f924",
+          "target": "__elan_ktf_ts_poll",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f93c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f950",
+          "target": "i2c_master_recv",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f974",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f994",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f9a0",
+          "target": "__fw_packet_handler",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f9b0",
+          "target": "enable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f9c8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa04",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa18",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa2c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa50",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa6c",
+          "target": "enable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fa78",
+          "target": "__const_udelay",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fac0",
+          "target": "strcpy",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fad8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fb4c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fb5c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066fb80",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "elan_ktf_ts_get_data.constprop.21": {
+      "address": "0xffffffc00066e58c",
+      "bytes": 164,
+      "calls": [
+        {
+          "pc": "0xffffffc00066e5a8",
+          "target": "i2c_master_send",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e5b8",
+          "target": "__elan_ktf_ts_poll",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e5cc",
+          "target": "i2c_master_recv",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e600",
+          "target": "dev_err",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066e628",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "elan_ktf_ts_hw_reset": {
+      "address": "0xffffffc00066ea38",
+      "bytes": 104,
+      "calls": [
+        {
+          "pc": "0xffffffc00066ea50",
+          "target": "gpio_to_desc",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea58",
+          "target": "gpiod_direction_output_raw",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea64",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea6c",
+          "target": "msleep",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea74",
+          "target": "gpio_to_desc",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea7c",
+          "target": "gpiod_direction_output_raw",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea88",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ea90",
+          "target": "msleep",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    },
+    "elan_ktf_ts_probe": {
+      "address": "0xffffffc00066ecb0",
+      "bytes": 2872,
+      "calls": [
+        {
+          "pc": "0xffffffc00066ecfc",
+          "target": "kmem_cache_alloc_trace",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ed20",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ed24",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ed60",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ed7c",
+          "target": "of_property_read_u32_array",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ed98",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066edc4",
+          "target": "__mutex_init",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066edec",
+          "target": "__alloc_workqueue_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ee08",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ee4c",
+          "target": "__alloc_workqueue_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ee68",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eeac",
+          "target": "__alloc_workqueue_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eec8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ef00",
+          "target": "init_timer_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ef24",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ef3c",
+          "target": "of_get_named_gpio_flags",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ef5c",
+          "target": "of_get_named_gpio_flags",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066ef7c",
+          "target": "of_get_named_gpio_flags",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066efa0",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066efb0",
+          "target": "regulator_enable",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066efb8",
+          "target": "msleep",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066efc8",
+          "target": "gpio_request",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066efe8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eff0",
+          "target": "gpio_to_desc",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066eff4",
+          "target": "gpiod_direction_input",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f010",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f018",
+          "target": "gpio_free",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f028",
+          "target": "gpio_request",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f048",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f050",
+          "target": "gpio_to_desc",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f058",
+          "target": "gpiod_direction_output_raw",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f074",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f07c",
+          "target": "gpio_free",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0b0",
+          "target": "wakeup_source_prepare",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0bc",
+          "target": "wakeup_source_add",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0cc",
+          "target": "wakeup_source_prepare",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0d4",
+          "target": "wakeup_source_add",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0e4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0e8",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0f0",
+          "target": "msleep",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f0f8",
+          "target": "__hello_packet_handler",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f118",
+          "target": "input_allocate_device",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f144",
+          "target": "set_bit",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f160",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f17c",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f198",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f1b4",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f1d0",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f1ec",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f208",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f224",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f240",
+          "target": "input_set_abs_params",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f278",
+          "target": "input_register_device",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f29c",
+          "target": "dev_err",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2a8",
+          "target": "input_free_device",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2b0",
+          "target": "kfree",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2c4",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2d4",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2e4",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f2f4",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f304",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f314",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f324",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f334",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f344",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f354",
+          "target": "input_set_capability",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f36c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f388",
+          "target": "proc_create_data",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f3a8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f3c8",
+          "target": "proc_create_data",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f3e8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f408",
+          "target": "proc_create_data",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f428",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f444",
+          "target": "kthread_create_on_node",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f450",
+          "target": "wake_up_process",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f474",
+          "target": "request_threaded_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f494",
+          "target": "dev_err",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f4a4",
+          "target": "irq_set_irq_wake",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f4b0",
+          "target": "disable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f4c0",
+          "target": "kobject_create_and_add",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f4dc",
+          "target": "sysfs_create_file_ns",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f500",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f51c",
+          "target": "_dev_info",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f54c",
+          "target": "misc_register",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f564",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f570",
+          "target": "misc_register",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f590",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f5a0",
+          "target": "sysfs_create_group",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f5b4",
+          "target": "dev_err",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f5f0",
+          "target": "init_timer_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f624",
+          "target": "__alloc_workqueue_key",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f64c",
+          "target": "queue_delayed_work_on",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f65c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f688",
+          "target": "switch_dev_register",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f69c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f6b4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f6c4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f6dc",
+          "target": "enable_irq",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f6e8",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f700",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f714",
+          "target": "sysfs_create_file_ns",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f738",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f75c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f774",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f78c",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f7a0",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f7b4",
+          "target": "printk",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f7cc",
+          "target": "dev_err",
+          "instruction": "bl"
+        },
+        {
+          "pc": "0xffffffc00066f7dc",
+          "target": "printk",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": [
+        "0xffffffc00066ece4"
+      ]
+    },
+    "show_reset": {
+      "address": "0xffffffc00066fb88",
+      "bytes": 56,
+      "calls": [
+        {
+          "pc": "0xffffffc00066fb94",
+          "target": "elan_ktf_ts_hw_reset",
+          "instruction": "bl"
+        }
+      ],
+      "indirect_branch_pcs": []
+    }
+  },
+  "limits": [
+    "Symbol bounds inferred from recovered kallsyms; ELF base is reconstructed.",
+    "Only direct branches inside the stated driver address range are traversed.",
+    "Framework callbacks, other threads, external helpers and all indirect targets are not proven.",
+    "No tablet test; no claim that every firmware programming path is disabled."
+  ]
+}

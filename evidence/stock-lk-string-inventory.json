@@ -1,0 +1,30 @@
+{
+  "firmware": "Acer_AV0M0_A3-A40_0.013.00_WW_GEN1",
+  "bytes": 266496,
+  "sha256": "aa9e839d18903cdc26953bbc2320f82f3b7b383ebea5dfecd9753d13ccce11b7",
+  "method": "Printable string inventory only; no handler disassembly or tablet access",
+  "strings_observed": [
+    "getvar:",
+    "download:",
+    "flash:",
+    "erase:",
+    "continue",
+    "reboot",
+    "reboot-bootloader",
+    "oem reboot-recovery",
+    "oem unlock",
+    "oem lock",
+    "flashing unlock",
+    "flashing lock",
+    "flashing get_unlock_ability",
+    "NEOSTRA8163_TB_M",
+    "not support on security"
+  ],
+  "fastboot_boot_support": "NOT ESTABLISHED",
+  "owner_installed_bootloader_match": "NOT ESTABLISHED",
+  "limitations": [
+    "Presence of a string does not prove that a command is registered, permitted or functional.",
+    "Absence of a standalone boot string does not prove absence of temporary boot (compiler string merging is possible).",
+    "The current owner build is 9.001.00; this LK is from the older third-party 0.013.00 archive."
+  ]
+}

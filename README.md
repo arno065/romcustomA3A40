@@ -8,6 +8,11 @@ Le [portage TWRP](docs/twrp-port.md) dispose maintenant d'un arbre appareil
 séparé, d'une recette locale et de contrôles d'empaquetage. TWRP n'est pas
 encore compilé : ce workspace est trop petit pour ses sources et son build.
 
+Le [collecteur PowerShell](tools/Collect-AcerDiagnostics.ps1) prépare les
+diagnostics sous Android d'origine ou en recovery. Voir la
+[procédure de premier essai](docs/first-recovery-test.md) et l'
+[analyse du pilote tactile stock](docs/stock-touch-audit.md).
+
 La cible reste LineageOS 20 / Android 13 allégé, ARM64 avec compatibilité ARM32.
 Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cible
 `lunch` : le noyau Android 13 et l'intégration des HAL restent à réaliser.
@@ -197,7 +202,11 @@ restent à analyser avant des essais matériels.
   bibliothèque absente et architecture incorrecte.
 - Trois tests du premier adaptateur graphique.
 - Vingt-deux tests du portage TWRP : CPIO, identification du stock, extraction
-  du ramdisk construit et empaquetage ; **39 tests locaux au total**.
+  du ramdisk construit et empaquetage.
+- Cinq tests du décodeur de branches ARM64 et quatre tests d'intégration du
+  collecteur PowerShell avec un faux ADB : **48 tests locaux réussis** dans
+  l'environnement d'analyse. Les tests PowerShell sont ignorés si son runtime
+  n'est pas disponible ; aucun test sur tablette ou Windows 5.1 n'est revendiqué.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.
 - Aller-retour du DTB vérifié sur les propriétés et les réservations.
 - Correctif source contrôlé par `git diff --check` et vérification d'application.

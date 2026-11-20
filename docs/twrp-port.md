@@ -55,8 +55,11 @@ mais ne prouve pas sa correspondance avec la tablette actuelle.
 Le pilote Elan du dépôt Acer candidat contient des chemins de mise à jour du
 firmware tactile au démarrage. Le patch du noyau expérimental bloque plusieurs
 de ces chemins ; **ces protections ne modifient pas le binaire stock** utilisé
-ici. Le comportement du noyau stock et la correspondance du firmware tactile
-restent à établir avant un essai matériel. Aucune commande de flash/démarrage
+ici. L'[analyse du binaire stock](stock-touch-audit.md) n'a trouvé aucun chemin
+d'appels directs au programmeur depuis les deux routines de démarrage examinées.
+Des limites subsistent sur les callbacks et les appels indirects ; la fonction
+de programmation reste présente. Cela ne certifie pas la tablette actuelle.
+Aucune commande de flash/démarrage
 n'est donc incluse dans cette recette.
 
 ## Construction locale
