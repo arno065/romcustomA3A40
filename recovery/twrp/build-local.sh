@@ -36,7 +36,19 @@ source build/envsetup.sh
 lunch omni_acer_jetfirefhd-eng
 # Ninja exposes the standard recoveryimage goal, not the intermediate file goal.
 # Inspect its ramdisk and repack separately; do not publish the unwrapped image.
+set +e
 make -j"$JOBS" recoveryimage 2>&1 | tee "$OUTPUT/build.log"
+BUILD_PIPESTATUS=("${PIPESTATUS[@]}")
+BUILD_STATUS=${BUILD_PIPESTATUS[0]}
+if [[ "$BUILD_STATUS" -eq 0 ]]; then BUILD_STATUS=${BUILD_PIPESTATUS[1]}; fi
+set -e
+# Preserve size diagnostics even when Android make rejects an oversized image.
+python3 "$PROJECT/tools/twrp_port.py" size-report "$STOCK" \
+    out/target/product/acer_jetfirefhd "$OUTPUT/ramdisk-size.json" || \
+    echo 'No valid ramdisk available for the size report; inspect build.log.'
+if [[ "$BUILD_STATUS" -ne 0 ]]; then
+    exit "$BUILD_STATUS"
+fi
 python3 "$PROJECT/tools/twrp_port.py" pack-built "$STOCK" \
     out/target/product/acer_jetfirefhd \
     "$OUTPUT/TWRP-A3-A40-PROBE-UNTESTED.img"

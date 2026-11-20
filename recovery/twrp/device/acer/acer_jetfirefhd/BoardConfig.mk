@@ -19,7 +19,10 @@ RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
 
 TW_THEME := landscape_hdpi
 TW_DEFAULT_LANGUAGE := fr
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
+# Applied after the ramdisk is assembled and before mkbootfs/compression.
+# Recursive assignment: TARGET_RECOVERY_ROOT_OUT is resolved by build/make later.
+BOARD_RECOVERY_IMAGE_PREPARE = python3 device/acer/acer_jetfirefhd/slim_twrp_resources.py "$(TARGET_RECOVERY_ROOT_OUT)"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 TW_NO_SCREEN_TIMEOUT := true

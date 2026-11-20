@@ -28,6 +28,8 @@ verrouillé n'est fourni sans cette synchronisation.
 - Écran 1920 × 1200, thème paysage, framebuffer `RGBX_8888` et stride du pilote.
   Ce choix suit le pilote Acer candidat ; couleurs, orientation et coordonnées
   tactiles nécessitent toujours un essai réel.
+- Français et anglais conservés. Les langues supplémentaires et leurs grosses
+  polices sont exclues pour respecter la partition recovery de 16 Mio.
 - Initialisation USB TWRP legacy `android_usb`, avec le réglage MediaTek `cmode=1`
   observé dans le recovery Acer. Le script USB TWRP amont conserve son identifiant
   `18D1:D001` : le pilote Windows fastboot Acer ne prouve pas qu'ADB recovery sera
@@ -101,6 +103,30 @@ noyau du modèle, recalcule le SHA-1 Android, retire l'ancienne signature OEM et
 refuse une image dépassant 16 Mio. Les dépendances ELF et la politique SELinux
 restent à vérifier après compilation. Une validation de structure n'est pas une
 validation de démarrage.
+
+## Taille du ramdisk
+
+Le relevé fourni par le propriétaire montrait une image intermédiaire de
+18 819 072 octets pour une limite de 16 777 216 : dépassement de 2 041 856 octets.
+`TW_EXTRA_LANGUAGES=false` évite l'ajout des polices asiatiques. Le hook standard
+`BOARD_RECOVERY_IMAGE_PREPARE` exécute ensuite `slim_twrp_resources.py` sur le
+ramdisk du build, avant mkbootfs et compression : seuls `en.xml` et `fr.xml`
+restent dans les langues. Le hook vérifie les polices référencées avant retrait,
+conserve les ressources communes et actualise les index de fichiers du ramdisk.
+Le noyau, ADB et les bibliothèques sont conservés.
+
+Une mesure locale sur les seules polices/langues amont donne environ 2,56 Mo
+de différence entre les agrégats gzip avant/après. Ce n'est pas une mesure de
+l'image complète reconstruite. Le relevé est dans
+[`evidence/twrp-resource-slimming.json`](../evidence/twrp-resource-slimming.json).
+
+Après le prochain build, `ramdisk-size.json` indiquera la taille compressée,
+le budget exact avec les en-têtes MediaTek et le noyau Acer, la marge restante
+et les 30 plus gros fichiers décompressés. Ce diagnostic est aussi tenté en cas
+d'échec de make sur la taille, sans masquer son code d'erreur. Le fichier est
+conservé parmi les artefacts JSON du workflow. La limite finale reste 16 Mio et
+l'empaquetage refuse toujours de la dépasser. La prochaine compilation complète
+reste nécessaire pour confirmer le gain.
 
 Si un contrôle échoue, le script s'arrête. Il n'y a ni téléchargement automatique
 d'une image d'un autre appareil, ni flash, ni déverrouillage, ni wipe.

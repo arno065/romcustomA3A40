@@ -204,7 +204,9 @@ restent à analyser avant des essais matériels.
 - Vingt-deux tests du portage TWRP : CPIO, identification du stock, extraction
   du ramdisk construit et empaquetage.
 - Cinq tests du décodeur de branches ARM64 et quatre tests d'intégration du
-  collecteur PowerShell avec un faux ADB : **48 tests locaux réussis** dans
+  collecteur PowerShell avec un faux ADB.
+- Six tests de réduction des ressources et de calcul de taille :
+  **54 tests locaux réussis** dans
   l'environnement d'analyse. Les tests PowerShell sont ignorés si son runtime
   n'est pas disponible ; aucun test sur tablette ou Windows 5.1 n'est revendiqué.
 - Corps du recovery Acer reconstruit à l'identique, hors signature retirée.

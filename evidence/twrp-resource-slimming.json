@@ -1,0 +1,106 @@
+{
+  "kept_languages": [
+    "en.xml",
+    "fr.xml"
+  ],
+  "removed": [
+    {
+      "path": "twres/fonts/DroidSansFallback.ttf",
+      "bytes": 3725920
+    },
+    {
+      "path": "twres/fonts/NotoSansCJKjp-Regular.ttf",
+      "bytes": 709712
+    },
+    {
+      "path": "twres/languages/cz.xml",
+      "bytes": 56186
+    },
+    {
+      "path": "twres/languages/de.xml",
+      "bytes": 52454
+    },
+    {
+      "path": "twres/languages/el.xml",
+      "bytes": 66394
+    },
+    {
+      "path": "twres/languages/es.xml",
+      "bytes": 52581
+    },
+    {
+      "path": "twres/languages/hu.xml",
+      "bytes": 49921
+    },
+    {
+      "path": "twres/languages/id.xml",
+      "bytes": 51465
+    },
+    {
+      "path": "twres/languages/it.xml",
+      "bytes": 48350
+    },
+    {
+      "path": "twres/languages/ja.xml",
+      "bytes": 50174
+    },
+    {
+      "path": "twres/languages/nl.xml",
+      "bytes": 53564
+    },
+    {
+      "path": "twres/languages/pl.xml",
+      "bytes": 57264
+    },
+    {
+      "path": "twres/languages/pt_BR.xml",
+      "bytes": 44935
+    },
+    {
+      "path": "twres/languages/pt_PT.xml",
+      "bytes": 51033
+    },
+    {
+      "path": "twres/languages/ru.xml",
+      "bytes": 69883
+    },
+    {
+      "path": "twres/languages/sk.xml",
+      "bytes": 43658
+    },
+    {
+      "path": "twres/languages/sl.xml",
+      "bytes": 44528
+    },
+    {
+      "path": "twres/languages/sv.xml",
+      "bytes": 10726
+    },
+    {
+      "path": "twres/languages/tr.xml",
+      "bytes": 50558
+    },
+    {
+      "path": "twres/languages/uk.xml",
+      "bytes": 57178
+    },
+    {
+      "path": "twres/languages/zh_CN.xml",
+      "bytes": 49296
+    },
+    {
+      "path": "twres/languages/zh_TW.xml",
+      "bytes": 49934
+    }
+  ],
+  "removed_uncompressed_bytes": 5445714,
+  "note": "Raw resource bytes; compressed image savings must be measured after build.",
+  "source_commit": "90e5d9559065cfa8b2b9a5dbb1c5cb7a88f034fa",
+  "user_reported_image_bytes": 18819072,
+  "partition_bytes": 16777216,
+  "user_reported_overflow_bytes": 2041856,
+  "gzip9_resource_aggregate_before": 2722391,
+  "gzip9_resource_aggregate_after": 159888,
+  "measurement_scope": "Only concatenated upstream fonts/languages; not a rebuilt complete recovery or guaranteed image delta",
+  "full_recovery_rebuild": "NOT PERFORMED; workflow is left for the owner to dispatch"
+}

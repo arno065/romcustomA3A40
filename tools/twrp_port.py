@@ -141,6 +141,7 @@ def prepare(stock, destination):
         raise ValueError('Destination must not exist; refusing to overwrite a device tree')
     shutil.copytree(PORT / DEVICE, destination)
     shutil.copy2(ROOT / DEVICE / 'BoardConfig.stock.mk', destination / 'BoardConfig.stock.mk')
+    shutil.copy2(ROOT / 'tools/slim_twrp_resources.py', destination / 'slim_twrp_resources.py')
     prebuilt = destination / 'prebuilt'
     prebuilt.mkdir()
     (prebuilt / 'stock-kernel.gz-dtb').write_bytes(image.unwrap_mtk(image.sections[0], 'kernel'))
@@ -194,6 +195,23 @@ def built_ramdisk(product_out):
 
 def pack(stock, ramdisk, output):
     return pack_compressed(stock, ramdisk.read_bytes(), output)
+
+
+def size_report(stock, product_out):
+    image = stock_image(stock)
+    compressed, source = built_ramdisk(product_out)
+    entries = read_newc(compressed)
+    fixed_bytes = image.page + align(len(image.sections[0]), image.page) + align(len(image.sections[2]), image.page)
+    limit = 16777216
+    final_bytes = fixed_bytes + align(512 + len(compressed), image.page)
+    files = [{'path': name, 'bytes': len(data)} for name, (mode, data) in entries.items()
+             if stat.S_ISREG(mode)]
+    return {'ramdisk_source': source, 'compressed_ramdisk_bytes': len(compressed),
+            'maximum_compressed_ramdisk_bytes': limit - fixed_bytes - 512,
+            'expected_mtk_image_bytes': final_bytes, 'partition_bytes': limit,
+            'fits_partition': final_bytes <= limit, 'remaining_partition_bytes': limit - final_bytes,
+            'largest_uncompressed_files': sorted(files, key=lambda item: (-item['bytes'], item['path']))[:30],
+            'note': 'Exact final geometry with original Acer kernel/wrappers; not a hardware boot test.'}
 
 
 def pack_built(stock, product_out, output):
@@ -250,6 +268,10 @@ def main():
     p.add_argument('stock', type=Path)
     p.add_argument('product_out', type=Path)
     p.add_argument('output', type=Path)
+    p = sub.add_parser('size-report')
+    p.add_argument('stock', type=Path)
+    p.add_argument('product_out', type=Path)
+    p.add_argument('output', type=Path)
     p = sub.add_parser('preflight')
     p.add_argument('source', type=Path)
     args = parser.parse_args()
@@ -262,6 +284,9 @@ def main():
             result = pack(args.stock, args.ramdisk, args.output)
         elif args.command == 'pack-built':
             result = pack_built(args.stock, args.product_out, args.output)
+        elif args.command == 'size-report':
+            result = size_report(args.stock, args.product_out)
+            args.output.write_text(json.dumps(result, indent=2) + '\n')
         else:
             result = preflight(args.source)
         print(json.dumps(result, indent=2))
