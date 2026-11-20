@@ -5,10 +5,10 @@
 sans essai de recovery personnalisé sur tablette**.
 
 Le [portage TWRP](docs/twrp-port.md) dispose maintenant d'un arbre appareil
-séparé, d'une recette locale et de contrôles d'empaquetage. La construction sur
-Actions a terminé la génération d'image après réduction des ressources. Le
-dernier échec communiqué concernait notre validateur SHA-1 ; sa correction est
-testée sur une image synthétique produite par le mkbootimg Omni amont.
+séparé, d'une recette locale et de contrôles d'empaquetage. L'image du run 5
+transmise par le propriétaire passe les [contrôles hors ligne](docs/recovery-run5-review.md),
+dont le format MediaTek, le hash, la taille et la fermeture statique ELF.
+Le démarrage sur tablette reste à valider.
 
 Le [collecteur PowerShell](tools/Collect-AcerDiagnostics.ps1) prépare les
 diagnostics sous Android d'origine ou en recovery. Voir la
@@ -220,8 +220,8 @@ restent à analyser avant des essais matériels.
 - Noyau candidat : compilé localement en `Image.gz-dtb`, DTB vérifié ; non testé
   sur matériel et non validé pour Android 13.
 - Android 13 : non compilé, non démarré ; aucune version flashable livrée.
-- TWRP : arbre préparé et contrôlé hors ligne ; compilation complète bloquée
-  par la capacité disque, aucun essai matériel. Voir [la recette](docs/twrp-port.md).
+- TWRP : image du run 5 reçue, 16 238 592 octets, contrôles hors ligne passés ;
+  aucun essai matériel. Voir [la revue](docs/recovery-run5-review.md).
 
 Le détail des interfaces restant à adapter est dans
 [`docs/compatibility-plan.md`](docs/compatibility-plan.md).

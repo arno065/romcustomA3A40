@@ -1,0 +1,129 @@
+{
+  "artifact": "Acer-TWRP-PROBE-UNTESTED-5.zip",
+  "archive_sha256": "4e02d3a17c57e58cd6983a8c922ed6c86f918db8cb20b60a6e28477d117913f3",
+  "review_date": "2026-11-20",
+  "verdict": "OFFLINE CHECKS PASSED; hardware boot and bootloader acceptance NOT VALIDATED",
+  "image": {
+    "format": "Android-v0 with MTK component wrappers",
+    "page_size": 2048,
+    "kernel_addr": "0x40080000",
+    "ramdisk_addr": "0x44000000",
+    "tags_addr": "0x4e000000",
+    "kernel_size": 6355522,
+    "ramdisk_size": 9878004,
+    "cmdline": "bootopt=64S3,32N2,64N2",
+    "trailer_bytes": 0,
+    "sha256": "fb49b04725692e80d82c4dc7edeab4a1366d4f20dc797cf6b79333a396fe0e6c",
+    "header_sha1_verified": true,
+    "trailer_signature_cryptographically_verified": false
+  },
+  "image_bytes": 16238592,
+  "partition_bytes": 16777216,
+  "margin_bytes": 538624,
+  "stock_reference": "Acer_AV0M0_A3-A40_0.013.00_WW_GEN1",
+  "stock_recovery_sha256": "4aa1ff4a7b824e57839f929730f9cd5798cb6bffa4ec0c978d86ff147f932aee",
+  "stock_kernel_section_byte_identical": true,
+  "kernel_section_sha256": "ee2ee4584734df4fc8e5a0fdc5f6613449af0e943d8a9659bb0a96b23bdcc28e",
+  "owner_current_firmware": "Acer_AV0M0_A3-A40_9.001.00_WW_GEN1",
+  "ramdisk": {
+    "entries": 416,
+    "compressed_bytes": 9877492,
+    "sha256": "ccd05a6a27f8e832cda71cebdf45f78defe478e4e6856499c1b83c54ec4a8bb6",
+    "languages": [
+      "twres/languages/en.xml",
+      "twres/languages/fr.xml"
+    ],
+    "profile_checks": [
+      "CPIO structure",
+      "main executable ELF headers",
+      "TWRP XML",
+      "probe fstab",
+      "hardware init",
+      "legacy USB",
+      "ADB properties"
+    ]
+  },
+  "elf": {
+    "objects": 95,
+    "programs_checked": 33,
+    "all_programs_static_check_passed": true,
+    "main_programs": [
+      {
+        "program": "init",
+        "architecture": [
+          2,
+          183
+        ],
+        "interpreter": null,
+        "preloaded_sonames": {},
+        "providers": 0,
+        "missing_libraries": [],
+        "architecture_mismatches": [],
+        "unresolved_strong_imports": [],
+        "static_check_passed": true
+      },
+      {
+        "program": "sbin/adbd",
+        "architecture": [
+          2,
+          183
+        ],
+        "interpreter": null,
+        "preloaded_sonames": {},
+        "providers": 0,
+        "missing_libraries": [],
+        "architecture_mismatches": [],
+        "unresolved_strong_imports": [],
+        "static_check_passed": true
+      },
+      {
+        "program": "sbin/recovery",
+        "architecture": [
+          2,
+          183
+        ],
+        "interpreter": "sbin/linker64",
+        "preloaded_sonames": {
+          "ld-android.so": "sbin/linker64"
+        },
+        "providers": 38,
+        "missing_libraries": [],
+        "architecture_mismatches": [],
+        "unresolved_strong_imports": [],
+        "static_check_passed": true
+      },
+      {
+        "program": "sbin/sh",
+        "architecture": [
+          2,
+          183
+        ],
+        "interpreter": "sbin/linker64",
+        "preloaded_sonames": {
+          "ld-android.so": "sbin/linker64"
+        },
+        "providers": 5,
+        "missing_libraries": [],
+        "architecture_mismatches": [],
+        "unresolved_strong_imports": [],
+        "static_check_passed": true
+      }
+    ],
+    "interpreter_soname": "ld-android.so provided by /sbin/linker64; no missing on-device file inferred"
+  },
+  "selinux": {
+    "policy_format_version": 30,
+    "stock_reference_policy_format_version": 30,
+    "runtime_load_and_enforcement": "NOT TESTED"
+  },
+  "sources_resolved_manifest_sha256": "8e71528e6037222788809aa7c8de1e53dac88c14e6592854ff43bdc8f2809d15",
+  "constraints": [
+    "Unsigned image; last supplied fastboot state was locked, current state not rechecked.",
+    "Temporary fastboot boot support on this Acer has not been established.",
+    "Kernel is from the older 0.013.00 firmware, not a dump of the owner 9.001.00 installation.",
+    "Probe fstab intentionally omits /data and /cache; ROM installation/decryption is not validated.",
+    "Offline ELF closure does not prove linker runtime behavior, dlopen/dlsym, hardware or kernel ABI compatibility."
+  ],
+  "actions_started_or_monitored": 0,
+  "tablet_commands_executed_by_this_review": 0
+}

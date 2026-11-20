@@ -2,3 +2,4 @@
 evidence/candidate-* -whitespace
 kernel/patches/*.patch -whitespace
 evidence/*.log -whitespace
+evidence/recovery-run5-sources-resolved.xml -whitespace

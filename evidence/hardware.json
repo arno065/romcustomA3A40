@@ -104,8 +104,9 @@
     "kernel_compilation": "Image.gz-dtb produced locally; see kernel-build.json",
     "graphics_lock_forwarding_tests_passed": 3,
     "twrp_port_unit_tests_passed": 14,
-    "twrp_compilation": "Actions reached recovery image generation; owner reported size rejection; resource reduction awaits a reported build result",
-    "owner_stock_android_diagnostics": "received; see owner-runtime-baseline.json; not a custom recovery test"
+    "twrp_compilation": "confirmed by owner-supplied run 5 artifact; offline format, stock-kernel equality and static ELF checks passed; hardware NOT TESTED",
+    "owner_stock_android_diagnostics": "received; see owner-runtime-baseline.json; not a custom recovery test",
+    "twrp_artifact_review": "recovery-run5-review.json"
   },
   "owner_runtime_baseline": "owner-runtime-baseline.json"
 }

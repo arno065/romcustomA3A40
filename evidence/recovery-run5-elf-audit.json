@@ -1,0 +1,532 @@
+{
+  "elf_objects": 95,
+  "architectures": {
+    "(2, 183)": 94,
+    "(1, 40)": 1
+  },
+  "programs": [
+    {
+      "program": "init",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": null,
+      "preloaded_sonames": {},
+      "providers": 0,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/adbd",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": null,
+      "preloaded_sonames": {},
+      "providers": 0,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/awk",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/bu",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 10,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/charger",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": null,
+      "preloaded_sonames": {},
+      "providers": 0,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/dd",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 7,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/dump_image",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/e2fsck",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 15,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/e2fsdroid",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 20,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/erase_image",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/exfat-fuse",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 6,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/fatlabel",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/flash_image",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/fsck.exfat",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 6,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/fsck.fat",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/grep",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/linker",
+      "architecture": [
+        1,
+        40
+      ],
+      "interpreter": null,
+      "preloaded_sonames": {},
+      "providers": 0,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/linker64",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": null,
+      "preloaded_sonames": {},
+      "providers": 0,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/listxattr",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/mke2fs",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 16,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/mkexfatfs",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 6,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/mkfs.fat",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/pigz",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 6,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/reboot",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 7,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/recovery",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 38,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/resize2fs",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 14,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/sh",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/simg2img",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 9,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/toolbox",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/toybox",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/tune2fs",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 15,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/twrp",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 5,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    },
+    {
+      "program": "sbin/unzip",
+      "architecture": [
+        2,
+        183
+      ],
+      "interpreter": "sbin/linker64",
+      "preloaded_sonames": {
+        "ld-android.so": "sbin/linker64"
+      },
+      "providers": 12,
+      "missing_libraries": [],
+      "architecture_mismatches": [],
+      "unresolved_strong_imports": [],
+      "static_check_passed": true
+    }
+  ],
+  "all_programs_static_check_passed": true,
+  "limits": [
+    "Static DT_NEEDED and strong-symbol closure only; runtime search policy, dlsym/dlopen, kernel interfaces and actual execution untested.",
+    "ld-android.so is provided by the explicitly loaded interpreter SONAME, not by an invented on-device file."
+  ]
+}
