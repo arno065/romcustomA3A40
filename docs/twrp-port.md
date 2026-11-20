@@ -1,9 +1,11 @@
 # Portage TWRP pour Acer A3-A40
 
 État : arbre appareil préparé, extraction du noyau stock et empaquetage contrôlés
-hors ligne. **TWRP n'a pas encore été compilé et aucune nouvelle image recovery
-n'a été testée sur tablette.** Le noyau expérimental publié précédemment n'est
-pas TWRP.
+hors ligne. La construction Actions a atteint la génération d'image ; le dernier
+échec communiqué était un dépassement de taille, traité par réduction des
+ressources. **Aucune nouvelle image recovery n'a été testée sur tablette.**
+Le noyau expérimental publié précédemment n'est pas TWRP. Le diagnostic reçu du
+propriétaire est une [référence Android d'origine](owner-runtime-baseline.md).
 
 ## Base choisie
 

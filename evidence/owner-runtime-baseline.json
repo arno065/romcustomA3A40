@@ -1,0 +1,91 @@
+{
+  "source": "Owner-supplied diagnostic ZIP; raw logs are kept outside the public repository",
+  "archive_sha256": "822452a82d4d46fbac19969c24aa381c557dcf115d2afae441b73b35561f805c",
+  "collected_utc": "2026-11-20T00:40:30.6532563Z",
+  "mode": "Stock Android baseline; not TWRP",
+  "collector_reported_powershell": "5.1.19041.7802",
+  "model": "A3-A40",
+  "device": "acer_jetfirefhd",
+  "platform": "mt8163",
+  "build": "Acer_AV0M0_A3-A40_9.001.00_WW_GEN1",
+  "android": "6.0",
+  "security_patch": "2017-05-05",
+  "kernel": "3.18.22, aarch64, built Thu May 25 18:37:25 CST 2017",
+  "touch_firmware_declared_property": "ID:FCC VER:1015",
+  "stock_0013_touch_firmware_declared_property": "ID:FCC VER:1014",
+  "touch_property_limit": "Android firmware property; not an independent query of controller flash",
+  "framebuffer": {
+    "driver": "mtkfb",
+    "mode_pixels": [
+      1920,
+      1200
+    ],
+    "virtual_size": [
+      1920,
+      2400
+    ],
+    "bits_per_pixel": 32,
+    "stride_bytes": 7680,
+    "channel_order": "not measured"
+  },
+  "input_devices": [
+    {
+      "name": "elan-touchscreen",
+      "axes": {
+        "ABS_MT_POSITION_X": {
+          "min": 0,
+          "max": 2048
+        },
+        "ABS_MT_POSITION_Y": {
+          "min": 0,
+          "max": 3264
+        }
+      }
+    },
+    {
+      "name": "mtk-tpd",
+      "axes": {
+        "ABS_MT_POSITION_X": {
+          "min": 0,
+          "max": 1200
+        },
+        "ABS_MT_POSITION_Y": {
+          "min": 0,
+          "max": 1920
+        }
+      }
+    }
+  ],
+  "partition_bytes_by_device": {
+    "mmcblk0p8": 16777216,
+    "mmcblk0p9": 16777216,
+    "mmcblk0p20": 3758096384,
+    "mmcblk0p21": 536870912,
+    "mmcblk0p22": 26763329536
+  },
+  "memory_kib": {
+    "MemTotal": 1987660,
+    "SwapTotal": 993828
+  },
+  "crypto_state": "encrypted",
+  "selinux": "Enforcing",
+  "selinux_policy_version": 30,
+  "mounts_summary": {
+    "system": "/dev/block/dm-0, ext4, read-only",
+    "data": "/dev/block/dm-1, ext4"
+  },
+  "collection": {
+    "files_in_zip": 14,
+    "commands_in_manifest": 12,
+    "timeouts": 0,
+    "by_name_directory_access": "Permission denied in command output despite adb client exit code 0",
+    "recovery_log": "not present"
+  },
+  "interpretation": [
+    "Framebuffer dimensions and stride agree with the current TWRP scaffold.",
+    "Two touch input devices expose distinct absolute ranges; event node numbers are not stable identifiers.",
+    "Axis ranges alone do not establish touch rotation, axis swapping or active hardware event flow.",
+    "No custom recovery hardware test or bootloader unlock-state check is provided by this archive.",
+    "Dmesg snapshot includes resume activity but not the initial touch firmware decision; it does not expand the startup audit."
+  ]
+}

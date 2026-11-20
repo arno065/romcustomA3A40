@@ -2,16 +2,19 @@
 
 État : **premier noyau matériel 3.18.22 compilé et premier adaptateur graphique
 écrit, sans ROM Android 13 compilée, sans recovery personnalisé fonctionnel et
-sans essai sur tablette**.
+sans essai de recovery personnalisé sur tablette**.
 
 Le [portage TWRP](docs/twrp-port.md) dispose maintenant d'un arbre appareil
-séparé, d'une recette locale et de contrôles d'empaquetage. TWRP n'est pas
-encore compilé : ce workspace est trop petit pour ses sources et son build.
+séparé, d'une recette locale et de contrôles d'empaquetage. La construction sur
+Actions a atteint la génération d'image ; le dernier échec communiqué concernait
+la taille. La réduction des ressources attend un résultat de build communiqué.
 
 Le [collecteur PowerShell](tools/Collect-AcerDiagnostics.ps1) prépare les
 diagnostics sous Android d'origine ou en recovery. Voir la
 [procédure de premier essai](docs/first-recovery-test.md) et l'
 [analyse du pilote tactile stock](docs/stock-touch-audit.md).
+Le [diagnostic réel sous Android d'origine](docs/owner-runtime-baseline.md)
+confirme notamment le framebuffer, le tactile Elan et la géométrie des partitions.
 
 La cible reste LineageOS 20 / Android 13 allégé, ARM64 avec compatibilité ARM32.
 Ce dépôt n'est pas une ROM Amazon renommée. Il n'enregistre pas encore de cible
